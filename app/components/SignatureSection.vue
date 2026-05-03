@@ -10,10 +10,10 @@ withDefaults(defineProps<{ variant?: Variant }>(), { variant: 'cream' })
   ]">
     <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 md:grid-cols-2 md:items-center lg:px-8">
       <div>
-        <h2 class="text-4xl leading-[1.05] font-bold tracking-tight sm:text-5xl">
+        <h2 class="text-3xl leading-[1.05] font-bold tracking-tight sm:text-4xl lg:text-5xl">
           La menuiserie est notre
         </h2>
-        <p class="mt-2 text-6xl leading-none font-bold tracking-tight sm:text-7xl lg:text-8xl">
+        <p class="mt-2 text-5xl leading-none font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           signature.
         </p>
         <div class="mt-8 max-w-xl space-y-5 text-[0.95rem] leading-relaxed text-white/90">

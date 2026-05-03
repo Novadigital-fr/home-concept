@@ -27,10 +27,10 @@ const steps = [
   <section class="bg-cream py-20 text-white sm:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <h2 class="text-4xl leading-tight font-bold tracking-tight sm:text-5xl">
+        <h2 class="text-3xl leading-tight font-bold tracking-tight sm:text-4xl lg:text-5xl">
           Votre projet&nbsp;?
         </h2>
-        <p class="mt-1 text-5xl leading-tight font-black tracking-tight sm:text-6xl">
+        <p class="mt-1 text-3xl leading-tight font-black tracking-tight sm:text-5xl lg:text-6xl">
           Notre accompagnement.
         </p>
       </div>

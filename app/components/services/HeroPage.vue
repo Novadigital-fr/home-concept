@@ -16,7 +16,7 @@
       <p class="text-2xl font-medium tracking-wide text-white/95 sm:text-3xl lg:text-4xl">
         nos métiers
       </p>
-      <h1 class="mt-1 text-5xl leading-none font-extrabold tracking-tight sm:text-7xl lg:text-8xl">
+      <h1 class="mt-1 text-3xl leading-none font-extrabold tracking-tight sm:text-6xl lg:text-8xl">
         COMPLÉMENTAIRES
       </h1>
     </div>

@@ -13,7 +13,7 @@ const services = [
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-12 lg:px-8">
       <!-- Titre -->
       <div class="flex items-center">
-        <h2 class="text-5xl leading-[0.95] font-black tracking-tight text-ink sm:text-6xl">
+        <h2 class="text-3xl leading-[0.95] font-black tracking-tight text-ink sm:text-5xl lg:text-6xl">
           Nos<br>services<br>complémentaires
         </h2>
       </div>

@@ -29,7 +29,7 @@ import { site } from '~/utils/site'
 
       <!-- Bloc titre -->
       <div class="flex flex-col justify-center">
-        <h1 class="text-5xl leading-[1.05] font-black tracking-tight sm:text-6xl lg:text-7xl">
+        <h1 class="text-4xl leading-[1.05] font-black tracking-tight sm:text-6xl lg:text-7xl">
           Expert en<br>
           menuiserie<br>
           <span class="text-white">&amp; rénovation</span><br>

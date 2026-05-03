@@ -17,7 +17,7 @@
         <p class="text-center text-2xl font-medium tracking-wide text-white/95 sm:text-3xl lg:text-4xl">
           notre cœur de métier
         </p>
-        <h1 class="mt-1 text-6xl leading-none font-extrabold tracking-tight sm:text-7xl lg:text-9xl">
+        <h1 class="mt-1 text-4xl leading-none font-extrabold tracking-tight sm:text-7xl lg:text-9xl">
           LA MENUISERIE
         </h1>
         <p class="mt-3 text-xl font-light tracking-wider text-white/95 italic sm:text-2xl lg:text-3xl">

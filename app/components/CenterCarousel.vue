@@ -94,7 +94,7 @@ onMounted(async () => {
     <button
       type="button"
       aria-label="Précédent"
-      class="absolute top-1/2 -left-4 z-10 hidden -translate-y-1/2 rounded-full bg-white p-3 shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:block lg:-left-12"
+      class="absolute top-1/2 -left-4 z-10 hidden -translate-y-1/2 size-11 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid lg:-left-12"
       @click="scrollByCard(-1)"
     >
       <Icon name="lucide:chevron-left" size="20" />
@@ -102,7 +102,7 @@ onMounted(async () => {
     <button
       type="button"
       aria-label="Suivant"
-      class="absolute top-1/2 -right-4 z-10 hidden -translate-y-1/2 rounded-full bg-white p-3 shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:block lg:-right-12"
+      class="absolute top-1/2 -right-4 z-10 hidden -translate-y-1/2 size-11 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid lg:-right-12"
       @click="scrollByCard(1)"
     >
       <Icon name="lucide:chevron-right" size="20" />
