@@ -1,0 +1,132 @@
+<script setup lang="ts">
+const form = reactive({
+  nom: '',
+  prenom: '',
+  adresse: '',
+  codePostal: '',
+  ville: '',
+  telephone: '',
+  email: '',
+  message: '',
+})
+const sent = ref(false)
+
+const submit = () => {
+  // TODO: brancher sur l'API/serveur d'envoi
+  sent.value = true
+  setTimeout(() => { sent.value = false }, 4000)
+  Object.assign(form, {
+    nom: '', prenom: '', adresse: '', codePostal: '',
+    ville: '', telephone: '', email: '', message: '',
+  })
+}
+
+const inputClasses = 'w-full rounded-full bg-white px-5 py-3 text-sm text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20'
+const labelClasses = 'block text-sm font-semibold text-white'
+</script>
+
+<template>
+  <section class="bg-white pt-8 pb-20 sm:pb-24">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <h2 class="text-center text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+        Demande de devis gratuite
+      </h2>
+
+      <form class="mt-8 rounded-3xl bg-cream px-8 py-10 shadow-sm sm:px-14 sm:py-12" @submit.prevent="submit">
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="nom" :class="labelClasses">Nom</label>
+            <input
+              id="nom"
+              v-model="form.nom"
+              type="text"
+              required
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+          <div>
+            <label for="prenom" :class="labelClasses">Prénom</label>
+            <input
+              id="prenom"
+              v-model="form.prenom"
+              type="text"
+              required
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label for="adresse" :class="labelClasses">Adresse des travaux</label>
+          <input
+            id="adresse"
+            v-model="form.adresse"
+            type="text"
+            :class="['mt-1.5', inputClasses]"
+          >
+        </div>
+
+        <div class="mt-4 grid grid-cols-2 gap-4">
+          <div>
+            <label for="cp" :class="labelClasses">Code postal</label>
+            <input
+              id="cp"
+              v-model="form.codePostal"
+              type="text"
+              inputmode="numeric"
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+          <div>
+            <label for="ville" :class="labelClasses">Ville</label>
+            <input
+              id="ville"
+              v-model="form.ville"
+              type="text"
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+        </div>
+
+        <div class="mt-4 grid grid-cols-2 gap-4">
+          <div>
+            <label for="tel" :class="labelClasses">Téléphone</label>
+            <input
+              id="tel"
+              v-model="form.telephone"
+              type="tel"
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+          <div>
+            <label for="email" :class="labelClasses">Email</label>
+            <input
+              id="email"
+              v-model="form.email"
+              type="email"
+              required
+              :class="['mt-1.5', inputClasses]"
+            >
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label for="message" :class="labelClasses">Parlez-nous de votre projet</label>
+          <textarea
+            id="message"
+            v-model="form.message"
+            rows="4"
+            required
+            class="mt-1.5 w-full rounded-2xl bg-white px-5 py-3 text-sm text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20"
+          />
+        </div>
+
+        <div class="mt-6 text-center">
+          <UiButton type="submit" variant="ink" size="lg">
+            {{ sent ? 'MESSAGE ENVOYÉ ✓' : 'DEMANDER VOTRE DEVIS' }}
+          </UiButton>
+        </div>
+      </form>
+    </div>
+  </section>
+</template>
