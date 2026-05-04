@@ -11,6 +11,10 @@ export default defineNuxtConfig({
     '@nuxt/icon',
   ],
 
+  image: {
+    provider: 'netlifyImageCdn',
+  },
+
   css: ['~/assets/css/main.css'],
 
   vite: {
