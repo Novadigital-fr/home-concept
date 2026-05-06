@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Glacial Indifference", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
 
   --color-brand: #E63946;
-  --color-brand-dark: #C72A37;
-  --color-cream: #D8C4A3;
+  --color-brand-dark: #111111;
+  --color-cream: #C4AD8D;
   --color-cream-light: #E8DBC0;
   --color-ink: #141414;
   --color-ink-soft: #1F1F1F;
@@ -13,6 +14,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 20px;
 }
 
 body {
@@ -20,9 +22,13 @@ body {
   font-family: var(--font-sans);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
 /* Display = Poppins Bold, sans italique. Pour titres et accents. */
 .font-display {
-  font-family: var(--font-sans);
+  font-family: var(--font-display);
   font-weight: 700;
   font-style: normal;
   letter-spacing: -0.02em;

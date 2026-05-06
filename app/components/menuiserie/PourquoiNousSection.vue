@@ -32,22 +32,22 @@ const features = [
 <template>
   <section :class="['py-16 sm:py-20', variant === 'cream' ? 'bg-cream' : 'bg-white']">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <h2 class="text-center text-3xl font-bold tracking-tight text-ink sm:text-4xl">
+      <h2 :class="['text-center text-3xl font-bold tracking-tight sm:text-4xl', variant === 'cream' ? 'text-white' : 'text-ink']">
         Pourquoi nous&nbsp;?
       </h2>
       <ul class="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <li
           v-for="feature in features"
           :key="feature.title"
-          class="text-center"
+          class="mx-auto max-w-[250px] text-center"
         >
           <div :class="['mx-auto grid size-12 place-items-center rounded-full text-brand shadow-sm', variant === 'cream' ? 'bg-white' : 'bg-cream-light']">
             <Icon :name="feature.icon" size="22" />
           </div>
-          <h3 class="mt-4 text-base leading-snug font-bold text-ink">
+          <h3 :class="['mt-4 text-base leading-snug font-bold', variant === 'cream' ? 'text-white' : 'text-ink']">
             {{ feature.title }}
           </h3>
-          <p class="mt-2 text-sm leading-relaxed text-ink/75">
+          <p :class="['mt-2 text-sm leading-relaxed', variant === 'cream' ? 'text-white/85' : 'text-ink/75']">
             {{ feature.desc }}
           </p>
         </li>

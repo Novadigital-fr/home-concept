@@ -33,7 +33,7 @@ const labelClasses = 'block text-sm font-semibold text-white'
       </h2>
 
       <form class="mt-8 rounded-3xl bg-cream px-8 py-10 shadow-sm sm:px-14 sm:py-12" @submit.prevent="submit">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label for="nom" :class="labelClasses">Nom</label>
             <input
@@ -66,7 +66,7 @@ const labelClasses = 'block text-sm font-semibold text-white'
           >
         </div>
 
-        <div class="mt-4 grid grid-cols-2 gap-4">
+        <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label for="cp" :class="labelClasses">Code postal</label>
             <input
@@ -88,7 +88,7 @@ const labelClasses = 'block text-sm font-semibold text-white'
           </div>
         </div>
 
-        <div class="mt-4 grid grid-cols-2 gap-4">
+        <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
             <label for="tel" :class="labelClasses">Téléphone</label>
             <input

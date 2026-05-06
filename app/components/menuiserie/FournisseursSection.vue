@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const fournisseurs = [
-  { name: 'K-LINE', img: 'https://picsum.photos/seed/kline/700/500' },
-  { name: 'Rima', img: 'https://picsum.photos/seed/rima/700/500' },
-  { name: 'Internorm', img: 'https://picsum.photos/seed/internorm/700/500' },
-  { name: 'Tryba', img: 'https://picsum.photos/seed/tryba/700/500' },
-  { name: 'Bieber', img: 'https://picsum.photos/seed/bieber/700/500' },
+  { name: 'K-LINE', img: '/img/menuiserie/aluminium.png' },
+  { name: 'Rima', img: '/img/menuiserie/bois.png' },
+  { name: 'Internorm', img: '/img/menuiserie/interieur-baie.png' },
+  { name: 'Tryba', img: '/img/menuiserie/pvc.png' },
+  { name: 'Bieber', img: '/img/fenetres.png' },
 ]
 </script>
 

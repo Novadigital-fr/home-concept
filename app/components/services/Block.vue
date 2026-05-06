@@ -50,7 +50,7 @@ const bodyColorClasses: Record<Variant, string> = {
       ]"
     >
       <div class="max-w-md">
-        <h2 class="text-5xl leading-[1.05] font-black tracking-tight sm:text-6xl">
+        <h2 class="text-4xl leading-[1.05] font-black tracking-tight break-words hyphens-auto sm:text-5xl lg:text-6xl">
           {{ title }}
         </h2>
         <p

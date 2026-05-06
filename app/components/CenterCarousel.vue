@@ -110,7 +110,7 @@ onMounted(async () => {
 
     <div
       ref="trackRef"
-      class="no-scrollbar flex h-[34rem] snap-x snap-mandatory items-end gap-6 overflow-x-auto pb-2"
+      class="no-scrollbar flex h-[24rem] snap-x snap-mandatory items-end gap-6 overflow-x-auto pb-2 sm:h-[34rem]"
       @scroll.passive="onScroll"
     >
       <article
@@ -122,7 +122,7 @@ onMounted(async () => {
         <div
           :class="[
             'overflow-hidden rounded-md transition-[height] duration-300',
-            i === activeFullIndex ? 'h-[30rem]' : 'h-[26rem]',
+            i === activeFullIndex ? 'h-[20rem] sm:h-[30rem]' : 'h-[18rem] sm:h-[26rem]',
           ]"
         >
           <NuxtImg

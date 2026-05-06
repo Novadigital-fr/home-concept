@@ -39,7 +39,7 @@ const blocks = [
     title: 'Les sols',
     description:
       "Le revêtement de sol vient sublimer vos espaces tout en répondant à vos contraintes du quotidien. Parquet, carrelage, vinyle ou sols techniques : chaque matériau est sélectionné avec soin et posé avec précision pour garantir esthétisme, durabilité et confort. Une finition essentielle pour donner du caractère et de la cohérence à votre intérieur.",
-    image: 'https://picsum.photos/seed/sols-page/900/700',
+    image: '/img/services/sols.png',
     variant: 'white' as const,
     imagePosition: 'left' as const,
   },
@@ -68,6 +68,6 @@ const blocks = [
       :image-position="block.imagePosition"
     />
     <ServicesEquipeCtaSection />
-    <AccompagnementSection />
+    <AccompagnementSection variant="cream" />
   </div>
 </template>

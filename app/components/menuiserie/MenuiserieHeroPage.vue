@@ -14,7 +14,7 @@
 
     <div class="relative mx-auto flex h-full max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
       <div class="text-right">
-        <p class="text-center text-2xl font-medium tracking-wide text-white/95 sm:text-3xl lg:text-4xl">
+        <p class="font-display text-center text-2xl font-medium tracking-wide text-white/95 sm:text-3xl lg:text-4xl">
           notre cœur de métier
         </p>
         <h1 class="mt-1 text-4xl leading-none font-extrabold tracking-tight sm:text-7xl lg:text-9xl">

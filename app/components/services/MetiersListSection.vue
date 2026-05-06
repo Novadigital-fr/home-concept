@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const metiers = [
-  { label: 'Peinture', icon: 'lucide:paintbrush' },
-  { label: 'Isolation', icon: 'lucide:home' },
-  { label: 'Électricité', icon: 'lucide:zap' },
-  { label: 'Plaquisterie', icon: 'lucide:layout-panel-top' },
-  { label: 'Sols', icon: 'lucide:square-stack' },
+  { label: 'Peinture', icon: '/img/services/peinture.svg' },
+  { label: 'Isolation', icon: '/img/services/isolation.svg' },
+  { label: 'Électricité', icon: '/img/services/electricite.svg' },
+  { label: 'Plaquisterie', icon: '/img/services/plaquisterie.svg' },
+  { label: 'Sols', icon: '/img/services/sols.svg' },
 ]
 </script>
 
@@ -20,14 +20,14 @@ const metiers = [
         <button
           type="button"
           aria-label="Précédent"
-          class="absolute top-1/2 -left-2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2.5 shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:block"
+          class="absolute top-1/2 -left-2 z-10 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
         >
           <Icon name="lucide:chevron-left" size="18" />
         </button>
         <button
           type="button"
           aria-label="Suivant"
-          class="absolute top-1/2 -right-2 z-10 hidden -translate-y-1/2 rounded-full bg-white p-2.5 shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:block"
+          class="absolute top-1/2 -right-2 z-10 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
         >
           <Icon name="lucide:chevron-right" size="18" />
         </button>
@@ -38,10 +38,13 @@ const metiers = [
             :key="m.label"
             class="flex flex-col items-center gap-4 text-center"
           >
-            <Icon
-              :name="m.icon"
-              :size="i === 2 ? 80 : 64"
-              :class="i === 2 ? 'text-ink' : 'text-neutral-700'"
+            <img
+              :src="m.icon"
+              :alt="m.label"
+              :class="[
+                'w-auto object-contain',
+                i === 2 ? 'h-28' : 'h-24',
+              ]"
             />
             <p
               :class="[

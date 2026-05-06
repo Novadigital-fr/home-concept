@@ -12,7 +12,7 @@ export default defineNuxtConfig({
   ],
 
   image: {
-    provider: 'netlifyImageCdn',
+    provider: process.env.NETLIFY ? 'netlifyImageCdn' : 'ipx',
   },
 
   css: ['~/assets/css/main.css'],
@@ -23,6 +23,11 @@ export default defineNuxtConfig({
 
   fonts: {
     families: [
+      {
+        name: 'Glacial Indifference',
+        weights: [400, 700],
+        styles: ['normal'],
+      },
       {
         name: 'Poppins',
         provider: 'google',

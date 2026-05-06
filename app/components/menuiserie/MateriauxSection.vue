@@ -8,7 +8,7 @@ const materiaux = [
 </script>
 
 <template>
-  <section class="overflow-x-hidden bg-cream-light py-20 sm:py-24">
+  <section class="overflow-x-hidden bg-white py-20 sm:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-12 lg:px-8">
       <div>
         <h2 class="text-5xl leading-[0.95] font-black tracking-tight text-ink sm:text-6xl">
@@ -32,18 +32,20 @@ const materiaux = [
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               format="webp"
             />
-            <div class="absolute inset-x-4 bottom-4 flex items-end justify-between gap-3">
-              <div class="rounded-md bg-white/95 px-5 py-3 shadow-lg backdrop-blur">
-                <p class="text-base font-bold text-ink">{{ item.label }}</p>
-                <p class="mt-0.5 text-xs text-neutral-600">{{ item.desc }}</p>
+            <div class="absolute inset-x-4 bottom-4">
+              <div class="flex items-stretch">
+                <div class="flex items-center bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
+                  <p class="text-base font-bold text-ink">{{ item.label }}</p>
+                </div>
+                <button
+                  type="button"
+                  class="grid w-11 shrink-0 place-items-center bg-ink text-white shadow-lg transition-colors hover:bg-black"
+                  :aria-label="`En savoir plus sur ${item.label}`"
+                >
+                  <Icon name="lucide:arrow-right" size="18" />
+                </button>
               </div>
-              <button
-                type="button"
-                class="grid size-11 shrink-0 place-items-center rounded-md bg-ink text-white transition-colors hover:bg-black"
-                :aria-label="`En savoir plus sur ${item.label}`"
-              >
-                <Icon name="lucide:plus" size="18" />
-              </button>
+              <p class="mt-3 text-sm text-white drop-shadow-md">{{ item.desc }}</p>
             </div>
           </template>
         </EdgeCarousel>

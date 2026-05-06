@@ -2,9 +2,9 @@
 const services = [
   { label: 'Électricité', img: '/img/electricite.png' },
   { label: 'Plaquisterie', img: '/img/plaquisterie.png' },
-  { label: 'Revêtements', img: 'https://picsum.photos/seed/revetements/700/900' },
-  { label: 'Peinture', img: 'https://picsum.photos/seed/peinture/700/900' },
-  { label: 'Sols', img: 'https://picsum.photos/seed/sols/700/900' },
+  { label: 'Revêtements', img: '/img/services/isolation.png' },
+  { label: 'Peinture', img: '/img/services/peinture.png' },
+  { label: 'Sols', img: '/img/services/sols.png' },
 ]
 </script>
 
@@ -28,13 +28,13 @@ const services = [
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               format="webp"
             />
-            <div class="absolute inset-x-4 bottom-4 flex items-end justify-between gap-3">
-              <div class="rounded-md bg-white px-5 py-3 shadow-lg">
+            <div class="absolute inset-x-4 bottom-4 flex items-stretch">
+              <div class="flex items-center bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
                 <span class="text-sm font-bold text-ink">{{ item.label }}</span>
               </div>
               <NuxtLink
                 :to="`/services/${item.label.toLowerCase()}`"
-                class="grid size-11 shrink-0 place-items-center rounded-md bg-ink text-white transition-colors hover:bg-black"
+                class="grid w-11 shrink-0 place-items-center bg-ink text-white shadow-lg transition-colors hover:bg-black"
                 :aria-label="`En savoir plus sur ${item.label}`"
               >
                 <Icon name="lucide:arrow-right" size="18" />

@@ -7,9 +7,9 @@ const props = withDefaults(defineProps<{
   trackHeight?: string
 }>(), {
   cardWidth: 'w-[20rem] sm:w-[24rem]',
-  activeHeight: 'h-[32rem]',
-  inactiveHeight: 'h-[28rem]',
-  trackHeight: 'h-[34rem]',
+  activeHeight: 'h-[22rem] sm:h-[32rem]',
+  inactiveHeight: 'h-[18rem] sm:h-[28rem]',
+  trackHeight: 'h-[24rem] sm:h-[34rem]',
 })
 
 const REPEAT = 3

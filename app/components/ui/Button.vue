@@ -18,8 +18,8 @@ const props = withDefaults(defineProps<{
 })
 
 const variantClasses: Record<Variant, string> = {
-  cream: 'bg-cream text-white hover:bg-cream-light hover:text-ink',
-  'cream-light': 'bg-cream-light text-ink hover:bg-cream',
+  cream: 'bg-cream text-white hover:bg-cream-light',
+  'cream-light': 'bg-cream-light text-white hover:bg-cream',
   ink: 'bg-ink text-white hover:bg-black',
   brand: 'bg-brand text-white hover:bg-brand-dark',
   white: 'bg-white text-ink hover:bg-neutral-100',

@@ -20,13 +20,13 @@ const submit = () => {
 </script>
 
 <template>
-  <footer class="bg-ink text-neutral-300">
+  <footer class="bg-black text-neutral-300">
     <div class="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 md:grid-cols-3 lg:px-8">
       <!-- Col 1: identité -->
       <div>
-        <NuxtLink to="/" class="flex items-center gap-3">
-          <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-12 w-auto" format="webp" />
-          <span class="text-lg font-bold text-white">{{ site.name }}</span>
+        <NuxtLink to="/" class="flex flex-col items-start gap-3">
+          <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-24 w-auto" format="webp" />
+          <span class="text-2xl font-bold text-white">{{ site.name }}</span>
         </NuxtLink>
         <p class="mt-3 text-xs text-neutral-400">
           {{ site.metiers }}
@@ -54,21 +54,21 @@ const submit = () => {
             type="text"
             required
             placeholder="Nom Prénom"
-            class="w-full rounded-md border border-neutral-700 bg-ink-soft px-4 py-2.5 text-sm text-white placeholder:text-neutral-500 focus:border-brand focus:outline-none"
+            class="w-full rounded-md border border-white bg-black px-4 py-2.5 text-sm text-white placeholder:text-white/60 focus:border-brand focus:outline-none"
           >
           <input
             v-model="form.email"
             type="email"
             required
             placeholder="Adresse e-mail"
-            class="w-full rounded-md border border-neutral-700 bg-ink-soft px-4 py-2.5 text-sm text-white placeholder:text-neutral-500 focus:border-brand focus:outline-none"
+            class="w-full rounded-md border border-white bg-black px-4 py-2.5 text-sm text-white placeholder:text-white/60 focus:border-brand focus:outline-none"
           >
           <textarea
             v-model="form.message"
             rows="4"
             required
             placeholder="Votre demande"
-            class="w-full rounded-md border border-neutral-700 bg-ink-soft px-4 py-2.5 text-sm text-white placeholder:text-neutral-500 focus:border-brand focus:outline-none"
+            class="w-full rounded-md border border-white bg-black px-4 py-2.5 text-sm text-white placeholder:text-white/60 focus:border-brand focus:outline-none"
           />
           <button
             type="submit"
@@ -84,15 +84,15 @@ const submit = () => {
         <h3 class="text-2xl font-bold tracking-tight text-white">
           Suivez-nous
         </h3>
-        <div class="mt-4 flex items-center gap-4">
-          <a :href="site.social.instagram" aria-label="Instagram" class="hover:text-white">
-            <Icon name="lucide:instagram" size="22" />
+        <div class="mt-4 inline-flex items-center gap-2 bg-white px-0 py-0 text-black">
+          <a :href="site.social.facebook" aria-label="Facebook" class="grid place-items-center transition-opacity hover:opacity-70">
+            <Icon name="mdi:facebook" size="32" />
           </a>
-          <a :href="site.social.facebook" aria-label="Facebook" class="hover:text-white">
-            <Icon name="lucide:facebook" size="22" />
+          <a :href="site.social.linkedin" aria-label="LinkedIn" class="grid place-items-center transition-opacity hover:opacity-70">
+            <Icon name="mdi:linkedin" size="32" />
           </a>
-          <a :href="site.social.linkedin" aria-label="LinkedIn" class="hover:text-white">
-            <Icon name="lucide:linkedin" size="22" />
+          <a :href="site.social.instagram" aria-label="Instagram" class="grid place-items-center transition-opacity hover:opacity-70">
+            <Icon name="mdi:instagram" size="32" />
           </a>
         </div>
 

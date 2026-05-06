@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <section class="bg-[#1FA9D6] py-16 text-white sm:py-20">
+  <section class="bg-[#0994DC] py-16 text-white sm:py-20">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-[2fr_1fr] md:items-center lg:px-8">
       <div>
         <h2 class="text-4xl leading-tight font-black tracking-tight sm:text-5xl">
@@ -27,11 +27,11 @@
         </div>
       </div>
 
-      <div class="flex justify-center md:justify-end">
+      <div class="flex justify-center md:justify-end md:self-start">
         <NuxtImg
           src="/img/menuiserie/rge-qualibat.png"
           alt="RGE Qualibat — Votre label de fiabilité"
-          class="w-44 sm:w-52"
+          class="relative w-56 sm:w-96 md:-mt-48 lg:-mt-56 lg:w-[28rem]"
           format="webp"
         />
       </div>
