@@ -3,7 +3,7 @@
 
 <template>
   <div class="flex min-h-dvh flex-col">
-    <AppHeader />
+    <AppHeaderLegacy />
     <main class="flex-1">
       <slot />
     </main>

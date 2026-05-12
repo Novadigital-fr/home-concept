@@ -14,7 +14,8 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 20px;
+  /* Base responsive: ~16px sur petit laptop (<=1280px), monte vers 20px sur grand ecran (>=1920px) */
+  font-size: clamp(16px, 0.625vw + 8px, 20px);
 }
 
 body {

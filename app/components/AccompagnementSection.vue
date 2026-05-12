@@ -45,15 +45,15 @@ const steps = [
         <li
           v-for="step in steps"
           :key="step.n"
-          class="mx-auto flex max-w-[250px] flex-col items-center text-center"
+          class="mx-auto flex max-w-[300px] flex-col items-center text-center"
         >
           <div class="grid size-14 place-items-center rounded-full bg-brand text-xl font-bold text-white shadow-lg">
             {{ step.n }}
           </div>
-          <h3 class="mt-5 text-lg font-bold leading-snug">
+          <h3 class="mt-5 text-xl font-bold leading-snug sm:text-2xl">
             {{ step.title }}
           </h3>
-          <p class="mt-3 max-w-xs text-sm leading-relaxed text-white/90">
+          <p class="mt-3 max-w-sm text-base leading-relaxed text-white/90 sm:text-lg">
             {{ step.desc }}
           </p>
         </li>

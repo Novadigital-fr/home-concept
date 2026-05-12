@@ -7,7 +7,7 @@ import { site } from '~/utils/site'
     <!-- Image fond bois -->
     <div class="absolute inset-0">
       <NuxtImg
-        src="/img/hero-bg.png"
+        src="/img/accueil/hero.jpg"
         alt=""
         class="h-full w-full object-cover"
         loading="eager"

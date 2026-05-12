@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const materiaux = [
-  { label: 'Aluminium', desc: 'Modernité, finesse, grandes ouvertures', img: '/img/menuiserie/aluminium.png' },
-  { label: 'Bois', desc: 'Chaleur, authenticité, sur-mesure', img: '/img/menuiserie/bois.png' },
-  { label: 'PVC', desc: 'Performance, entretien facile, abordable', img: '/img/menuiserie/pvc.png' },
+  { label: 'Aluminium', desc: 'Modernité, finesse, grandes ouvertures', img: '/img/menuiserie/aluminium.webp' },
+  { label: 'Bois', desc: 'Chaleur, authenticité, sur-mesure', img: '/img/menuiserie/bois.jpg' },
+  { label: 'PVC', desc: 'Performance, entretien facile, abordable', img: '/img/menuiserie/pvc.jpg' },
   { label: 'Mixte', desc: 'Le meilleur des deux mondes', img: 'https://picsum.photos/seed/mixte/700/900' },
 ]
 </script>
@@ -10,8 +10,8 @@ const materiaux = [
 <template>
   <section class="overflow-x-hidden bg-white py-20 sm:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-12 lg:px-8">
-      <div>
-        <h2 class="text-5xl leading-[0.95] font-black tracking-tight text-ink sm:text-6xl">
+      <div class="min-w-0">
+        <h2 class="pointer-events-none relative z-10 text-5xl leading-[0.95] font-black tracking-tight text-white mix-blend-difference sm:text-6xl lg:text-7xl lg:whitespace-nowrap">
           Nos<br>matériaux
         </h2>
         <p class="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-ink/80">

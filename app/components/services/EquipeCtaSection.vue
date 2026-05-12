@@ -14,7 +14,7 @@
       </p>
 
       <NuxtImg
-        src="/img/services/equipe.png"
+        src="/img/services/team.png"
         alt="L'équipe Home Concept"
         class="mx-auto mt-12 w-full max-w-5xl"
         format="webp"

@@ -1,18 +1,18 @@
 <script setup lang="ts">
 const fournisseurs = [
-  { name: 'K-LINE', img: '/img/menuiserie/aluminium.png' },
-  { name: 'Rima', img: '/img/menuiserie/bois.png' },
-  { name: 'Internorm', img: '/img/menuiserie/interieur-baie.png' },
-  { name: 'Tryba', img: '/img/menuiserie/pvc.png' },
-  { name: 'Bieber', img: '/img/fenetres.png' },
+  { name: 'K-LINE', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/k-line/logo.png' },
+  { name: 'Atlantem', img: '/img/menuiserie/fournisseurs/atlantem/produit.webp', logo: '/img/menuiserie/fournisseurs/atlantem/logo.webp' },
+  { name: 'MéO', img: '/img/menuiserie/fournisseurs/meo/produit.png', logo: '/img/menuiserie/fournisseurs/meo/logo.png' },
+  { name: 'FIMA', img: '/img/menuiserie/fournisseurs/fima/produit.jpg', logo: '/img/menuiserie/fournisseurs/fima/logo.png' },
+  { name: 'France Fermetures', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/france-fermetures/logo.svg' },
 ]
 </script>
 
 <template>
   <section class="overflow-x-hidden bg-white py-20 sm:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-12 lg:px-8">
-      <div>
-        <h2 class="text-5xl leading-[0.95] font-black tracking-tight text-ink sm:text-6xl">
+      <div class="min-w-0">
+        <h2 class="pointer-events-none relative z-10 text-5xl leading-[0.95] font-black tracking-tight text-white mix-blend-difference sm:text-6xl lg:text-7xl lg:whitespace-nowrap">
           Nos<br>fournisseurs
         </h2>
         <p class="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-neutral-700">
@@ -34,8 +34,14 @@ const fournisseurs = [
               class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               format="webp"
             />
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-              <p class="text-sm font-bold tracking-wide text-white">{{ item.name }}</p>
+            <div class="absolute inset-0 bg-white/55" />
+            <div class="absolute inset-x-0 bottom-0 flex justify-center p-6">
+              <NuxtImg
+                :src="item.logo"
+                :alt="item.name"
+                class="max-h-20 w-auto max-w-[70%] object-contain"
+                format="webp"
+              />
             </div>
           </template>
         </EdgeCarousel>

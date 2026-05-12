@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const photos = [
-  { src: '/img/fenetres.png', area: 'lg:col-start-1 lg:col-span-3 lg:row-start-1 lg:row-span-3' },
-  { src: '/img/menuiserie/interieur-baie.png', area: 'lg:col-start-4 lg:col-span-3 lg:row-start-1 lg:row-span-4' },
-  { src: '/img/menuiserie/aluminium.png', area: 'lg:col-start-7 lg:col-span-3 lg:row-start-2 lg:row-span-3' },
-  { src: '/img/porte-entree.png', area: 'lg:col-start-10 lg:col-span-2 lg:row-start-1 lg:row-span-4' },
-  { src: '/img/menuiserie/bois.png', area: 'lg:col-start-12 lg:col-span-1 lg:row-start-1 lg:row-span-6' },
-  { src: '/img/volets.png', area: 'lg:col-start-1 lg:col-span-3 lg:row-start-4 lg:row-span-3' },
-  { src: '/img/menuiserie/pvc.png', area: 'lg:col-start-4 lg:col-span-3 lg:row-start-5 lg:row-span-2' },
-  { src: '/img/menuiserie-pierre.png', area: 'lg:col-start-7 lg:col-span-3 lg:row-start-5 lg:row-span-2' },
-  { src: '/img/interieur-plante.png', area: 'lg:col-start-10 lg:col-span-2 lg:row-start-5 lg:row-span-2' },
+  { src: '/img/menuiserie/realisations/1.jpg', area: 'lg:col-start-1 lg:col-span-3 lg:row-start-1 lg:row-span-3' },
+  { src: '/img/menuiserie/realisations/3.jpg', area: 'lg:col-start-4 lg:col-span-3 lg:row-start-1 lg:row-span-4' },
+  { src: '/img/menuiserie/realisations/6.jpg', area: 'lg:col-start-7 lg:col-span-3 lg:row-start-2 lg:row-span-3' },
+  { src: '/img/menuiserie/realisations/8.jpg', area: 'lg:col-start-10 lg:col-span-2 lg:row-start-1 lg:row-span-4' },
+  { src: '/img/menuiserie/realisations/9.jpg', area: 'lg:col-start-12 lg:col-span-1 lg:row-start-1 lg:row-span-6' },
+  { src: '/img/menuiserie/realisations/12.jpg', area: 'lg:col-start-1 lg:col-span-3 lg:row-start-4 lg:row-span-3' },
+  { src: '/img/menuiserie/realisations/16.jpg', area: 'lg:col-start-4 lg:col-span-3 lg:row-start-5 lg:row-span-2' },
+  { src: '/img/menuiserie/realisations/17.jpg', area: 'lg:col-start-7 lg:col-span-3 lg:row-start-5 lg:row-span-2' },
+  { src: '/img/menuiserie/realisations/18.jpg', area: 'lg:col-start-10 lg:col-span-2 lg:row-start-5 lg:row-span-2' },
 ]
 </script>
 

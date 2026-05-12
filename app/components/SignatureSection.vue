@@ -41,7 +41,7 @@ withDefaults(defineProps<{ variant?: Variant }>(), { variant: 'cream' })
       <div class="relative h-[24rem] sm:h-[44rem]">
         <div class="absolute top-0 left-0 h-[68%] w-[82%] overflow-hidden rounded-md shadow-2xl sm:w-[70%]">
           <NuxtImg
-            src="/img/menuiserie/interieur-baie.png"
+            src="/img/accueil/interieur-1.jpg"
             alt="Intérieur menuiserie sur mesure"
             class="h-full w-full object-cover"
             format="webp"
@@ -49,7 +49,7 @@ withDefaults(defineProps<{ variant?: Variant }>(), { variant: 'cream' })
         </div>
         <div class="absolute top-[42%] right-[4%] bottom-0 w-[64%] overflow-hidden rounded-md shadow-2xl ring-1 ring-black/10 sm:w-[52%]">
           <NuxtImg
-            src="/img/interieur-plante.png"
+            src="/img/accueil/interieur-2.jpg"
             alt="Détail menuiserie"
             class="h-full w-full object-cover"
             format="webp"

@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         name: 'Poppins',
         provider: 'google',
         weights: [400, 500, 600, 700, 800, 900],
-        styles: ['normal'],
+        styles: ['normal', 'italic'],
       },
     ],
   },
@@ -43,6 +43,9 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/img/logo.png' },
       ],
     },
   },

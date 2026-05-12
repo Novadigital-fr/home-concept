@@ -9,21 +9,21 @@ type Member = {
 
 const members: Member[] = [
   {
-    label: 'Gérard',
-    img: '/img/a-propos/gerard.png',
-    role: 'Menuisier-poseur',
-    bio: '"Menuisier de formation, je mets mon expérience au service de chaque chantier. La précision de la pose et le soin apporté aux finitions sont pour moi essentiels pour garantir un travail durable et de qualité."',
-  },
-  {
     label: 'Quentin',
-    img: '/img/a-propos/quentin.png',
+    img: '/img/equipe/quentin.png',
     role: 'Gérant de Home Concept',
     bio: '"J\'ai été professionnel de santé pendant 12 ans, puis rugbyman semi-pro et président de club. Je me suis ensuite formé à la rénovation sur différents projets, avec un CAP électricien et une VAE de menuisier-poseur.\nJe me spécialise aujourd\'hui en {hl0} et en {hl1}, mes deux domaines de prédilection. Ce qui me motive, c\'est de concrétiser les projets de nos clients, dans un esprit d\'équipe, comme sur un terrain de rugby."',
     highlights: ['menuiserie', 'électricité'],
   },
   {
+    label: 'Gérard',
+    img: '/img/equipe/gerard.png',
+    role: 'Menuisier-poseur',
+    bio: '"Menuisier de formation, je mets mon expérience au service de chaque chantier. La précision de la pose et le soin apporté aux finitions sont pour moi essentiels pour garantir un travail durable et de qualité."',
+  },
+  {
     label: 'Cendric',
-    img: '/img/a-propos/cendric.png',
+    img: '/img/equipe/cendric.png',
     role: 'Polyvalent rénovation',
     bio: '"Touche-à-tout passionné, j\'interviens sur l\'ensemble des corps de métier de la rénovation. La polyvalence me permet d\'apporter des solutions concrètes et adaptées à chaque étape du chantier."',
   },

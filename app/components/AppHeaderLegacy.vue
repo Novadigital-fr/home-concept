@@ -2,12 +2,45 @@
 import { navLinks, site } from '~/utils/site'
 
 const open = ref(false)
+const hideTop = ref(false)
+let lastY = 0
+let ticking = false
+
+const onScroll = () => {
+  if (ticking) return
+  ticking = true
+  requestAnimationFrame(() => {
+    const y = window.scrollY
+    if (y < 60) {
+      hideTop.value = false
+    } else if (y > lastY + 8) {
+      hideTop.value = true
+    } else if (y < lastY - 8) {
+      hideTop.value = false
+    }
+    lastY = y
+    ticking = false
+  })
+}
+
+onMounted(() => {
+  lastY = window.scrollY
+  window.addEventListener('scroll', onScroll, { passive: true })
+})
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', onScroll)
+})
 </script>
 
 <template>
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral-100">
     <!-- Row 1 : identité + contacts -->
-    <div class="border-b border-neutral-100">
+    <div
+      :class="[
+        'overflow-hidden border-neutral-100 transition-all duration-300 ease-out',
+        hideTop ? 'max-h-0 opacity-0' : 'max-h-24 border-b opacity-100',
+      ]"
+    >
       <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <NuxtLink to="/" class="flex items-center gap-3">
           <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-12 w-auto" format="webp" />

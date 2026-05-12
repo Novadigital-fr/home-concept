@@ -6,15 +6,15 @@ type Post =
   | { kind: 'text', title: string, subtitle?: string, bg: string, text: string, border?: boolean, area: string, mobile: string }
 
 const posts: Post[] = [
-  { kind: 'image', src: 'https://picsum.photos/seed/realisation-1/600/900', alt: 'Réalisation 1', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-4', mobile: 'aspect-[3/4]' },
+  { kind: 'image', src: '/img/menuiserie/realisations/1.jpg', alt: 'Réalisation 1', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-4', mobile: 'aspect-[3/4]' },
   { kind: 'text', title: 'EXIGENCE\nPRÉCISION\nPASSION', bg: 'bg-transparent', text: 'text-ink', area: 'lg:col-start-3 lg:col-span-3 lg:row-start-2 lg:row-span-2', mobile: 'aspect-square' },
-  { kind: 'image', src: 'https://picsum.photos/seed/stone-interior/600/900', alt: 'Intérieur pierre', area: 'lg:col-start-6 lg:col-span-3 lg:row-start-2 lg:row-span-5', mobile: 'aspect-[3/4]' },
-  { kind: 'image', src: 'https://picsum.photos/seed/home-concept-equipe/600/600', alt: 'Notre équipe', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-square' },
+  { kind: 'image', src: '/img/menuiserie/realisations/3.jpg', alt: 'Intérieur', area: 'lg:col-start-6 lg:col-span-3 lg:row-start-2 lg:row-span-5', mobile: 'aspect-[3/4]' },
+  { kind: 'image', src: '/img/services/team.png', alt: 'Notre équipe', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-square' },
   { kind: 'text', title: 'AVANT\nAPRÈS', subtitle: 'SWIPEZ POUR VOIR', bg: 'bg-brand', text: 'text-white', area: 'lg:col-start-11 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-[3/4]' },
-  { kind: 'image', src: 'https://picsum.photos/seed/chair/400/400', alt: 'Fauteuil', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-5 lg:row-span-2', mobile: 'aspect-square' },
+  { kind: 'image', src: '/img/menuiserie/realisations/6.jpg', alt: 'Réalisation', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-5 lg:row-span-2', mobile: 'aspect-square' },
   { kind: 'text', title: 'RGE', subtitle: "qu'est-ce que c'est ?", bg: 'bg-ink', text: 'text-white', area: 'lg:col-start-3 lg:col-span-3 lg:row-start-5 lg:row-span-3', mobile: 'aspect-[4/3]' },
-  { kind: 'image', src: 'https://picsum.photos/seed/kitchen/600/600', alt: 'Cuisine', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-5 lg:row-span-3', mobile: 'aspect-square' },
-  { kind: 'image', src: 'https://picsum.photos/seed/wood-beams/600/600', alt: 'Poutres bois', area: 'lg:col-start-11 lg:col-span-2 lg:row-start-5 lg:row-span-3', mobile: 'aspect-square' },
+  { kind: 'image', src: '/img/menuiserie/realisations/8.jpg', alt: 'Réalisation', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-5 lg:row-span-3', mobile: 'aspect-square' },
+  { kind: 'image', src: '/img/menuiserie/realisations/9.jpg', alt: 'Réalisation', area: 'lg:col-start-11 lg:col-span-2 lg:row-start-5 lg:row-span-3', mobile: 'aspect-square' },
 ]
 </script>
 

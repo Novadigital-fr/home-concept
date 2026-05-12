@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const items = [
-  { label: 'Porte d\'entrée', img: '/img/porte-entree.png' },
-  { label: 'Fenêtres', img: '/img/fenetres.png' },
-  { label: 'Volets', img: '/img/volets.png' },
+  { label: 'Porte d\'entrée', img: '/img/accueil/porte-entree.jpg' },
+  { label: 'Fenêtres', img: '/img/accueil/fenetre.jpg' },
+  { label: 'Volets', img: '/img/accueil/volets.jpg' },
   { label: 'Baie vitrée', img: 'https://picsum.photos/seed/baie-vitree/800/900' },
   { label: 'Porte de garage', img: 'https://picsum.photos/seed/porte-garage/800/900' },
   { label: 'Pergola', img: 'https://picsum.photos/seed/pergola/800/900' },

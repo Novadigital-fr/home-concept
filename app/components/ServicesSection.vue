@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const services = [
-  { label: 'Électricité', img: '/img/electricite.png' },
-  { label: 'Plaquisterie', img: '/img/plaquisterie.png' },
-  { label: 'Revêtements', img: '/img/services/isolation.png' },
-  { label: 'Peinture', img: '/img/services/peinture.png' },
-  { label: 'Sols', img: '/img/services/sols.png' },
+  { label: 'Électricité', img: '/img/accueil/electricite.jpg' },
+  { label: 'Plaquisterie', img: '/img/accueil/plaquisterie.jpg' },
+  { label: 'Isolation', img: '/img/accueil/isolation.jpg' },
+  { label: 'Peinture', img: '/img/accueil/peinture.jpg' },
+  { label: 'Sols', img: '/img/accueil/revetement-sol.jpg' },
 ]
 </script>
 
@@ -12,8 +12,8 @@ const services = [
   <section class="overflow-x-hidden bg-white py-20 sm:py-24">
     <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[2fr_3fr] lg:gap-12 lg:px-8">
       <!-- Titre -->
-      <div class="flex items-center">
-        <h2 class="text-3xl leading-[0.95] font-black tracking-tight text-ink sm:text-5xl lg:text-6xl">
+      <div class="flex min-w-0 items-center">
+        <h2 class="pointer-events-none relative z-10 text-3xl leading-[0.95] font-black tracking-tight text-white mix-blend-difference sm:text-5xl lg:text-7xl lg:whitespace-nowrap">
           Nos<br>services<br>complémentaires
         </h2>
       </div>

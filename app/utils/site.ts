@@ -10,9 +10,9 @@ export const site = {
   },
   metiers: 'Menuiserie • Plaquisterie & Isolation • Peinture • Sols • Électricité',
   social: {
-    instagram: '#',
-    facebook: '#',
-    linkedin: '#',
+    instagram: 'https://www.instagram.com/homeconcept73/',
+    facebook: 'https://www.facebook.com/homeconcept73',
+    linkedin: 'https://www.linkedin.com/in/quentin-barbe-815551337/',
   },
 } as const
 
