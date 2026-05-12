@@ -21,8 +21,8 @@ const submit = () => {
   })
 }
 
-const inputClasses = 'w-full rounded-full bg-white px-5 py-3 text-sm text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20'
-const labelClasses = 'block text-sm font-semibold text-white'
+const inputClasses = 'w-full rounded-full bg-white px-5 py-3 text-base text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20'
+const labelClasses = 'block text-base font-semibold text-white'
 </script>
 
 <template>
@@ -117,7 +117,7 @@ const labelClasses = 'block text-sm font-semibold text-white'
             v-model="form.message"
             rows="4"
             required
-            class="mt-1.5 w-full rounded-2xl bg-white px-5 py-3 text-sm text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20"
+            class="mt-1.5 w-full rounded-2xl bg-white px-5 py-3 text-base text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20"
           />
         </div>
 

@@ -14,7 +14,7 @@ const materiaux = [
         <h2 class="pointer-events-none relative z-10 text-5xl leading-[0.95] font-black tracking-tight text-white mix-blend-difference sm:text-6xl lg:text-7xl lg:whitespace-nowrap">
           Nos<br>matériaux
         </h2>
-        <p class="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-ink/80">
+        <p class="mt-6 max-w-sm text-lg sm:text-xl leading-relaxed text-ink/80">
           Nous vous conseillerons le matériau le plus
           <strong class="font-bold">adapté</strong> à vos
           <strong class="font-bold">besoins</strong>, à votre
@@ -35,7 +35,7 @@ const materiaux = [
             <div class="absolute inset-x-4 bottom-4">
               <div class="flex items-stretch">
                 <div class="flex items-center bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
-                  <p class="text-base font-bold text-ink">{{ item.label }}</p>
+                  <p class="text-lg font-bold text-ink" style="font-family: var(--font-display);">{{ item.label }}</p>
                 </div>
                 <button
                   type="button"
@@ -45,7 +45,7 @@ const materiaux = [
                   <Icon name="lucide:arrow-right" size="18" />
                 </button>
               </div>
-              <p class="mt-3 text-sm text-white drop-shadow-md">{{ item.desc }}</p>
+              <p class="mt-3 text-base text-white drop-shadow-md sm:text-lg" style="font-family: var(--font-display);">{{ item.desc }}</p>
             </div>
           </template>
         </EdgeCarousel>

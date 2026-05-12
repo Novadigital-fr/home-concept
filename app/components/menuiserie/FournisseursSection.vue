@@ -15,7 +15,7 @@ const fournisseurs = [
         <h2 class="pointer-events-none relative z-10 text-5xl leading-[0.95] font-black tracking-tight text-white mix-blend-difference sm:text-6xl lg:text-7xl lg:whitespace-nowrap">
           Nos<br>fournisseurs
         </h2>
-        <p class="mt-6 max-w-sm text-[0.95rem] leading-relaxed text-neutral-700">
+        <p class="mt-6 max-w-sm text-lg sm:text-xl leading-relaxed text-neutral-700">
           Nous travaillons avec des fabricants
           <strong class="font-bold">français</strong> et
           <strong class="font-bold">européens</strong> reconnus pour la

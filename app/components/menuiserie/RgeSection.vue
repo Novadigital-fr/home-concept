@@ -9,7 +9,7 @@
           Home Concept<br>
           est certifié RGE&nbsp;!
         </h2>
-        <div class="mt-6 max-w-2xl space-y-4 text-[0.95rem] leading-relaxed text-white/95">
+        <div class="mt-6 max-w-2xl space-y-4 text-lg sm:text-xl leading-relaxed text-white/95">
           <p>
             <strong class="font-bold">RGE</strong>, ou Reconnu Garant de l'Environnement,
             signifie que nous répondons à des critères stricts en matière de qualité et

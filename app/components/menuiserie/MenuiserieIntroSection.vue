@@ -13,7 +13,7 @@ const items = [
 <template>
   <section class="bg-white py-16 sm:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-base text-neutral-700">
+      <p class="text-center text-lg text-neutral-700 sm:text-xl">
         Pour un habitat plus performant &amp; esthétique...
       </p>
 
@@ -21,7 +21,7 @@ const items = [
         <CenterCarousel :items="items" />
       </div>
 
-      <p class="mx-auto mt-10 max-w-3xl text-center text-[0.95rem] leading-relaxed text-neutral-700">
+      <p class="mx-auto mt-10 max-w-3xl text-center text-lg sm:text-xl leading-relaxed text-neutral-700">
         Nous (construisons) et installons vos portes, fenêtres et aménagements en bois,
         aluminium, PVC (mettre tous les matériaux), avec des solutions adaptées à
         chaque projet.

@@ -53,7 +53,7 @@ const steps = [
           <h3 class="mt-5 text-xl font-bold leading-snug sm:text-2xl">
             {{ step.title }}
           </h3>
-          <p class="mt-3 max-w-sm text-base leading-relaxed text-white/90 sm:text-lg">
+          <p class="mt-3 max-w-sm text-lg leading-relaxed text-white/90 sm:text-xl">
             {{ step.desc }}
           </p>
         </li>

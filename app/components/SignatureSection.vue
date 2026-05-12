@@ -16,7 +16,7 @@ withDefaults(defineProps<{ variant?: Variant }>(), { variant: 'cream' })
         <p class="font-display text-5xl leading-none font-bold tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
           signature.
         </p>
-        <div class="mt-8 max-w-xl space-y-5 text-[0.95rem] leading-relaxed text-white/90">
+        <div class="mt-8 max-w-xl space-y-5 text-lg sm:text-xl leading-relaxed text-white/90">
           <p>
             Spécialistes de la menuiserie sur mesure, nous accompagnons nos clients
             à chaque étape de leur projet, de la conception à la pose finale. Nous

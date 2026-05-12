@@ -44,10 +44,10 @@ const features = [
           <div :class="['mx-auto grid size-12 place-items-center rounded-full text-brand shadow-sm', variant === 'cream' ? 'bg-white' : 'bg-cream-light']">
             <Icon :name="feature.icon" size="22" />
           </div>
-          <h3 :class="['mt-4 text-base leading-snug font-bold', variant === 'cream' ? 'text-white' : 'text-ink']">
+          <h3 :class="['mt-4 text-lg leading-snug font-bold sm:text-xl', variant === 'cream' ? 'text-white' : 'text-ink']">
             {{ feature.title }}
           </h3>
-          <p :class="['mt-2 text-sm leading-relaxed', variant === 'cream' ? 'text-white/85' : 'text-ink/75']">
+          <p :class="['mt-2 text-base leading-relaxed sm:text-lg', variant === 'cream' ? 'text-white/85' : 'text-ink/75']">
             {{ feature.desc }}
           </p>
         </li>

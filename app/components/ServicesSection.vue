@@ -30,7 +30,7 @@ const services = [
             />
             <div class="absolute inset-x-4 bottom-4 flex items-stretch">
               <div class="flex items-center bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
-                <span class="text-sm font-bold text-ink">{{ item.label }}</span>
+                <span class="text-sm font-bold text-ink" style="font-family: var(--font-display);">{{ item.label }}</span>
               </div>
               <NuxtLink
                 :to="`/services/${item.label.toLowerCase()}`"

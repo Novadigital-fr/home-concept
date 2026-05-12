@@ -137,6 +137,7 @@ onMounted(async () => {
             'text-center transition-all duration-300',
             i === activeFullIndex ? 'text-base font-bold text-ink' : 'text-sm font-medium text-neutral-700',
           ]"
+          style="font-family: var(--font-display);"
         >
           {{ item.label }}
         </p>

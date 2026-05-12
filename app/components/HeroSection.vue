@@ -35,7 +35,7 @@ import { site } from '~/utils/site'
           <span class="text-white">&amp; rénovation</span><br>
           intérieure
         </h1>
-        <p class="mt-7 max-w-xl text-sm text-neutral-200 sm:text-base">
+        <p class="mt-7 max-w-xl text-lg text-neutral-200 sm:text-xl">
           {{ site.metiers }}
         </p>
         <div class="mt-9">

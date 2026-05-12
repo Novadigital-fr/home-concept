@@ -22,7 +22,7 @@ const posts: Post[] = [
   <section class="bg-white py-20 sm:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <p class="text-sm text-neutral-500">
+        <p class="text-sm text-neutral-500" style="font-family: var(--font-display);">
           Réalisations, conseils, témoignages, ...
         </p>
         <h2 class="mt-1 text-4xl font-bold tracking-tight text-ink sm:text-5xl">

@@ -55,7 +55,7 @@ const bodyColorClasses: Record<Variant, string> = {
         </h2>
         <p
           :class="[
-            'mt-6 text-justify text-[0.95rem] leading-relaxed',
+            'mt-6 text-justify text-lg leading-relaxed sm:text-xl',
             bodyColorClasses[variant],
           ]"
         >

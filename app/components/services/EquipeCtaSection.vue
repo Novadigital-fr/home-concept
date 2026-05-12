@@ -4,7 +4,7 @@
 <template>
   <section class="bg-white py-20 sm:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <p class="mx-auto max-w-3xl text-center text-[0.95rem] leading-relaxed text-ink/80">
+      <p class="mx-auto max-w-3xl text-center text-lg sm:text-xl leading-relaxed text-ink/80">
         Chaque membre de l'équipe dispose de qualifications solides et d'un savoir-faire
         spécifique, avec un métier de prédilection qu'il maîtrise particulièrement.
         Cette spécialisation individuelle, associée à une vraie polyvalence, permet de

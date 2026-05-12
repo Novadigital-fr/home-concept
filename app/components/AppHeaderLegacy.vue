@@ -4,6 +4,9 @@ import { navLinks, site } from '~/utils/site'
 const open = ref(false)
 const hideTop = ref(false)
 let lastY = 0
+let downAccum = 0
+let upAccum = 0
+let cooldownUntil = 0
 let ticking = false
 
 const onScroll = () => {
@@ -11,13 +14,31 @@ const onScroll = () => {
   ticking = true
   requestAnimationFrame(() => {
     const y = window.scrollY
+    const delta = y - lastY
+    const now = performance.now()
+
     if (y < 60) {
       hideTop.value = false
-    } else if (y > lastY + 8) {
-      hideTop.value = true
-    } else if (y < lastY - 8) {
-      hideTop.value = false
+      downAccum = 0
+      upAccum = 0
+    } else if (now > cooldownUntil) {
+      if (delta > 0) {
+        downAccum += delta
+        upAccum = 0
+        if (downAccum > 20 && !hideTop.value) {
+          hideTop.value = true
+          cooldownUntil = now + 400
+        }
+      } else if (delta < 0) {
+        upAccum += -delta
+        downAccum = 0
+        if (upAccum > 20 && hideTop.value) {
+          hideTop.value = false
+          cooldownUntil = now + 400
+        }
+      }
     }
+
     lastY = y
     ticking = false
   })
@@ -37,11 +58,12 @@ onBeforeUnmount(() => {
     <!-- Row 1 : identité + contacts -->
     <div
       :class="[
-        'overflow-hidden border-neutral-100 transition-all duration-300 ease-out',
-        hideTop ? 'max-h-0 opacity-0' : 'max-h-24 border-b opacity-100',
+        'grid grid-cols-1 border-neutral-100 transition-[grid-template-rows,opacity] duration-300 ease-out',
+        hideTop ? 'grid-rows-[0fr] opacity-0' : 'grid-rows-[1fr] border-b opacity-100',
       ]"
     >
-      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div class="overflow-hidden">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <NuxtLink to="/" class="flex items-center gap-3">
           <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-12 w-auto" format="webp" />
           <span class="flex flex-col leading-tight">
@@ -60,12 +82,13 @@ onBeforeUnmount(() => {
             {{ site.phone }}
           </a>
         </div>
+        </div>
       </div>
     </div>
 
     <!-- Row 2 : nav + CTA -->
     <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex">
+      <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex lg:text-base">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.to"
