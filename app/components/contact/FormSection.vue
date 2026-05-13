@@ -8,17 +8,57 @@ const form = reactive({
   telephone: '',
   email: '',
   message: '',
+  botcheck: '',
 })
 const sent = ref(false)
+const sending = ref(false)
+const errorMsg = ref('')
 
-const submit = () => {
-  // TODO: brancher sur l'API/serveur d'envoi
-  sent.value = true
-  setTimeout(() => { sent.value = false }, 4000)
-  Object.assign(form, {
-    nom: '', prenom: '', adresse: '', codePostal: '',
-    ville: '', telephone: '', email: '', message: '',
-  })
+const config = useRuntimeConfig()
+
+const submit = async () => {
+  if (sending.value) return
+  errorMsg.value = ''
+  sending.value = true
+
+  try {
+    const res = await $fetch<{ success: boolean; message?: string }>('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: {
+        access_key: config.public.web3formsAccessKey,
+        subject: `Nouvelle demande de devis — ${form.prenom} ${form.nom}`.trim(),
+        from_name: `${form.prenom} ${form.nom}`.trim() || 'Site Home Concept',
+        replyto: form.email,
+        nom: form.nom,
+        prenom: form.prenom,
+        adresse_travaux: form.adresse,
+        code_postal: form.codePostal,
+        ville: form.ville,
+        telephone: form.telephone,
+        email: form.email,
+        message: form.message,
+        botcheck: form.botcheck,
+      },
+    })
+
+    if (!res.success) {
+      errorMsg.value = res.message || "L'envoi a échoué. Merci de réessayer."
+      return
+    }
+
+    sent.value = true
+    setTimeout(() => { sent.value = false }, 6000)
+    Object.assign(form, {
+      nom: '', prenom: '', adresse: '', codePostal: '',
+      ville: '', telephone: '', email: '', message: '', botcheck: '',
+    })
+  }
+  catch {
+    errorMsg.value = "L'envoi a échoué. Vérifiez votre connexion puis réessayez."
+  }
+  finally {
+    sending.value = false
+  }
 }
 
 const inputClasses = 'w-full rounded-full bg-white px-5 py-3 text-base text-ink placeholder:text-ink/40 shadow-sm focus:outline-none focus:ring-2 focus:ring-ink/20'
@@ -121,9 +161,22 @@ const labelClasses = 'block text-base font-semibold text-white'
           />
         </div>
 
+        <input
+          v-model="form.botcheck"
+          type="checkbox"
+          name="botcheck"
+          tabindex="-1"
+          autocomplete="off"
+          class="hidden"
+        >
+
+        <p v-if="errorMsg" class="mt-4 text-center text-sm font-medium text-red-100">
+          {{ errorMsg }}
+        </p>
+
         <div class="mt-6 text-center">
-          <UiButton type="submit" variant="ink" size="lg">
-            {{ sent ? 'MESSAGE ENVOYÉ ✓' : 'DEMANDER VOTRE DEVIS' }}
+          <UiButton type="submit" variant="ink" size="lg" :disabled="sending">
+            {{ sending ? 'ENVOI EN COURS…' : sent ? 'MESSAGE ENVOYÉ ✓' : 'DEMANDER VOTRE DEVIS' }}
           </UiButton>
         </div>
       </form>

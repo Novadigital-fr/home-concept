@@ -88,7 +88,7 @@ onBeforeUnmount(() => {
 
     <!-- Row 2 : nav + CTA -->
     <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-      <nav class="hidden items-center gap-7 text-sm font-medium text-ink md:flex lg:text-base">
+      <nav class="hidden items-center gap-7 text-sm font-medium text-ink lg:flex lg:text-base">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.to"
@@ -100,13 +100,15 @@ onBeforeUnmount(() => {
         </NuxtLink>
       </nav>
 
-      <div class="flex flex-1 items-center justify-end md:flex-none">
-        <UiButton to="/votre-projet" variant="cream-light" class="hidden md:inline-flex">
-          Votre projet
-        </UiButton>
+      <div class="flex flex-1 items-center justify-end lg:flex-none">
+        <div class="hidden lg:block">
+          <UiButton to="/votre-projet" variant="cream-light">
+            Votre projet
+          </UiButton>
+        </div>
         <button
           type="button"
-          class="md:hidden"
+          class="lg:hidden"
           aria-label="Ouvrir le menu"
           @click="open = !open"
         >
@@ -121,7 +123,7 @@ onBeforeUnmount(() => {
       leave-active-class="transition duration-100 ease-in"
       leave-to-class="opacity-0 -translate-y-2"
     >
-      <div v-if="open" class="border-t border-neutral-100 bg-white md:hidden">
+      <div v-if="open" class="border-t border-neutral-100 bg-white lg:hidden">
         <nav class="flex flex-col px-4 py-3">
           <NuxtLink
             v-for="link in navLinks"

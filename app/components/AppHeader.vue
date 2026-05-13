@@ -17,7 +17,7 @@ const open = ref(false)
         </span>
       </NuxtLink>
 
-      <nav class="hidden flex-1 items-center justify-center gap-8 text-sm text-white md:flex lg:gap-12">
+      <nav class="hidden flex-1 items-center justify-center gap-8 text-sm text-white lg:flex lg:gap-12">
         <NuxtLink
           v-for="link in navLinks"
           :key="link.to"
@@ -29,15 +29,15 @@ const open = ref(false)
         </NuxtLink>
       </nav>
 
-      <div class="ml-auto flex items-center md:ml-0">
-        <div class="hidden md:block">
+      <div class="ml-auto flex items-center lg:ml-0">
+        <div class="hidden lg:block">
           <UiButton to="/votre-projet" variant="cream-light">
             Votre projet
           </UiButton>
         </div>
         <button
           type="button"
-          class="md:hidden"
+          class="lg:hidden"
           aria-label="Ouvrir le menu"
           @click="open = !open"
         >
@@ -52,7 +52,7 @@ const open = ref(false)
       leave-active-class="transition duration-100 ease-in"
       leave-to-class="opacity-0 -translate-y-2"
     >
-      <div v-if="open" class="border-t border-white/10 bg-black md:hidden">
+      <div v-if="open" class="border-t border-white/10 bg-black lg:hidden">
         <nav class="flex flex-col px-4 py-3">
           <NuxtLink
             v-for="link in navLinks"

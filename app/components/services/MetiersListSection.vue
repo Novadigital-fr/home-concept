@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const metiers = [
-  { label: 'Peinture', icon: '/img/services/peinture.svg' },
+  { label: 'Peinture', icon: '/img/services/plaquisterie.svg' },
   { label: 'Isolation', icon: '/img/services/isolation.svg' },
   { label: 'Électricité', icon: '/img/services/electricite.svg' },
-  { label: 'Plaquisterie', icon: '/img/services/plaquisterie.svg' },
+  { label: 'Plaquisterie', icon: '/img/services/peinture.svg' },
   { label: 'Sols', icon: '/img/services/sols.svg' },
 ]
 </script>
@@ -43,7 +43,7 @@ const metiers = [
               :alt="m.label"
               :class="[
                 'w-auto object-contain',
-                i === 2 ? 'h-28' : 'h-24',
+                i === 2 ? 'h-40' : i === 1 || i === 3 ? 'h-24' : 'h-16',
               ]"
             />
             <p
