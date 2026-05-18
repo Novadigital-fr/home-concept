@@ -57,11 +57,11 @@ const bioParts = computed(() => {
   <section class="bg-white py-8">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-        <div>
+        <div class="min-w-0">
           <CenterCarousel :items="members" @update:active="activeIndex = $event" />
         </div>
 
-        <div class="min-h-[22rem] rounded-lg bg-cream px-8 py-10 text-center text-white shadow-sm sm:min-h-[26rem] sm:px-12 sm:py-12 lg:text-left">
+        <div class="min-w-0 rounded-lg bg-cream px-6 py-8 text-center text-white shadow-sm sm:min-h-[26rem] sm:px-12 sm:py-12 lg:text-left">
           <p class="text-2xl font-bold sm:text-3xl">
             {{ active.role }}
           </p>
