@@ -16,7 +16,7 @@ const photos = [
   <section class="bg-white py-20 sm:py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="text-center">
-        <p class="text-sm font-medium tracking-wide text-neutral-700">
+        <p class="font-display text-lg font-bold tracking-wide text-ink sm:text-xl lg:text-2xl">
           Nos réalisations
         </p>
         <h2 class="mt-1 text-4xl font-bold tracking-tight text-ink sm:text-5xl">

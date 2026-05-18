@@ -31,7 +31,7 @@ const sizeClasses: Record<Size, string> = {
   lg: 'px-7 py-3.5 text-sm',
 }
 
-const baseClasses = 'inline-flex items-center justify-center gap-2 rounded-full font-bold tracking-wide transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2'
+const baseClasses = 'font-display inline-flex items-center justify-center gap-2 rounded-full font-bold tracking-wide transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2'
 
 const classes = computed(() => [
   baseClasses,

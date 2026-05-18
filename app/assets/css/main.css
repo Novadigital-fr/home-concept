@@ -16,11 +16,13 @@ html {
   scroll-behavior: smooth;
   /* Base responsive: ~16px sur petit laptop (<=1280px), monte vers 20px sur grand ecran (>=1920px) */
   font-size: clamp(16px, 0.625vw + 8px, 20px);
+  overflow-x: clip;
 }
 
 body {
   @apply bg-white text-neutral-900 antialiased;
   font-family: var(--font-sans);
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
