@@ -19,6 +19,6 @@ export const site = {
 export const navLinks = [
   { label: 'Accueil', to: '/' },
   { label: 'La menuiserie', to: '/menuiserie' },
-  { label: 'Nos services complémentaires', to: '/services' },
+  { label: 'Nos métiers complémentaires', to: '/services' },
   { label: 'Qui sommes-nous ?', to: '/qui-sommes-nous' },
 ] as const

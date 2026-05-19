@@ -14,7 +14,7 @@ const services = [
       <!-- Titre noir (visible sur fond blanc, déborde au-dessus du carrousel) -->
       <div class="flex min-w-0 items-center">
         <h2 class="relative z-10 text-3xl leading-[0.95] font-black tracking-tight text-ink sm:text-5xl lg:text-7xl lg:whitespace-nowrap">
-          Nos<br>services<br>complémentaires
+          Nos<br>métiers<br>complémentaires
         </h2>
       </div>
 
@@ -55,7 +55,7 @@ const services = [
           class="absolute top-1/2 z-20 -translate-y-1/2 text-3xl leading-[0.95] font-black tracking-tight text-white sm:text-5xl lg:text-7xl lg:whitespace-nowrap"
           style="left: calc(-66.6667% - 3rem);"
         >
-          Nos<br>services<br>complémentaires
+          Nos<br>métiers<br>complémentaires
         </h2>
       </div>
     </div>

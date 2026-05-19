@@ -13,9 +13,9 @@ const items = [
 <template>
   <section class="bg-white py-16 sm:py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <p class="text-center text-lg text-neutral-700 sm:text-xl">
+      <h2 class="mx-auto max-w-2xl text-center text-2xl font-bold leading-snug tracking-tight text-ink sm:text-3xl">
         Pour un habitat plus performant &amp; esthétique...
-      </p>
+      </h2>
 
       <div class="mt-10">
         <CenterCarousel :items="items" />
