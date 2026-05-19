@@ -21,7 +21,7 @@
       />
 
       <div class="mt-10 text-center">
-        <UiButton to="/qui-sommes-nous" variant="cream-light" size="lg">
+        <UiButton to="/qui-sommes-nous" variant="cream" size="lg">
           Découvrez notre équipe
         </UiButton>
       </div>

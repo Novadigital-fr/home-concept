@@ -102,7 +102,7 @@ onBeforeUnmount(() => {
 
       <div class="flex flex-1 items-center justify-end lg:flex-none">
         <div class="hidden lg:block">
-          <UiButton to="/votre-projet" variant="cream-light">
+          <UiButton to="/votre-projet" variant="cream">
             Votre projet
           </UiButton>
         </div>
@@ -134,7 +134,7 @@ onBeforeUnmount(() => {
           >
             {{ link.label }}
           </NuxtLink>
-          <UiButton to="/votre-projet" variant="cream-light" block class="mt-2" @click="open = false">
+          <UiButton to="/votre-projet" variant="cream" block class="mt-2" @click="open = false">
             Votre projet
           </UiButton>
         </nav>

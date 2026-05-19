@@ -31,7 +31,7 @@ const open = ref(false)
 
       <div class="ml-auto flex items-center lg:ml-0">
         <div class="hidden lg:block">
-          <UiButton to="/votre-projet" variant="cream-light">
+          <UiButton to="/votre-projet" variant="cream">
             Votre projet
           </UiButton>
         </div>
@@ -63,7 +63,7 @@ const open = ref(false)
           >
             {{ link.label }}
           </NuxtLink>
-          <UiButton to="/votre-projet" variant="cream-light" block class="mt-2" @click="open = false">
+          <UiButton to="/votre-projet" variant="cream" block class="mt-2" @click="open = false">
             Votre projet
           </UiButton>
         </nav>
