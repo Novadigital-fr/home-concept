@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const fournisseurs = [
   { name: 'K-LINE', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/k-line/logo.png' },
-  { name: 'MéO', img: '/img/menuiserie/fournisseurs/meo/produit.png', logo: '/img/menuiserie/fournisseurs/meo/logo.png' },
+  { name: 'MéO', img: '/img/menuiserie/fournisseurs/meo/produit.jpg', logo: '/img/menuiserie/fournisseurs/meo/logo.png' },
   { name: 'FIMA', img: '/img/menuiserie/fournisseurs/fima/produit.jpg', logo: '/img/menuiserie/fournisseurs/fima/logo.png' },
   { name: 'France Fermetures', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/france-fermetures/logo.svg' },
   { name: 'Profalux', img: '/img/menuiserie/fournisseurs/profalux/produit.jpg', logo: '/img/menuiserie/fournisseurs/profalux/logo.jpg' },

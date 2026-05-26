@@ -9,7 +9,7 @@ const posts: Post[] = [
   { kind: 'image', src: '/img/menuiserie/realisations/1.jpg', alt: 'Réalisation 1', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-1 lg:row-span-4', mobile: 'aspect-[3/4]' },
   { kind: 'text', title: 'EXIGENCE\nPRÉCISION\nPASSION', bg: 'bg-transparent', text: 'text-ink', area: 'lg:col-start-3 lg:col-span-3 lg:row-start-2 lg:row-span-2', mobile: 'aspect-square' },
   { kind: 'image', src: '/img/menuiserie/realisations/3.jpg', alt: 'Intérieur', area: 'lg:col-start-6 lg:col-span-3 lg:row-start-2 lg:row-span-5', mobile: 'aspect-[3/4]' },
-  { kind: 'image', src: '/img/services/team.png', alt: 'Notre équipe', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-square' },
+  { kind: 'image', src: '/img/services/team.jpg', alt: 'Notre équipe', area: 'lg:col-start-9 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-square' },
   { kind: 'text', title: 'AVANT\nAPRÈS', subtitle: 'SWIPEZ POUR VOIR', bg: 'bg-brand', text: 'text-white', area: 'lg:col-start-11 lg:col-span-2 lg:row-start-1 lg:row-span-3', mobile: 'aspect-[3/4]' },
   { kind: 'image', src: '/img/menuiserie/realisations/6.jpg', alt: 'Réalisation', area: 'lg:col-start-1 lg:col-span-2 lg:row-start-5 lg:row-span-2', mobile: 'aspect-square' },
   { kind: 'text', title: 'RGE', subtitle: "qu'est-ce que c'est ?", bg: 'bg-ink', text: 'text-white', area: 'lg:col-start-3 lg:col-span-3 lg:row-start-5 lg:row-span-3', mobile: 'aspect-[4/3]' },

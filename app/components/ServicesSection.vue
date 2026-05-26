@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const services = [
-  { label: 'Plaquisterie', img: '/img/accueil/plaquisterie.png' },
+  { label: 'Plaquisterie', img: '/img/accueil/plaquisterie.jpg' },
   { label: 'Isolation', img: '/img/accueil/isolation.jpg' },
   { label: 'Électricité', img: '/img/accueil/electricite.jpg' },
   { label: 'Plâtrerie & peinture', img: '/img/accueil/peinture.jpg' },

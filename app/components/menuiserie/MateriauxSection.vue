@@ -4,7 +4,7 @@ const materiaux = [
   { label: 'Bois', desc: 'Chaleur, authenticité, noblesse', img: '/img/menuiserie/bois.jpg', sub: '' },
   { label: 'PVC', desc: 'Performance, entretien facile, abordable', img: '/img/menuiserie/pvc.jpg', sub: '' },
   { label: 'Hybride', desc: 'Le meilleur des deux mondes', img: '/img/menuiserie/hybride.jpg', sub: 'bois/aluminium ou aluminium/pvc' },
-  { label: 'Acier', desc: 'Robustesse, caractère, sur-mesure', img: '/img/menuiserie/acier.png', sub: '' },
+  { label: 'Acier', desc: 'Robustesse, caractère, sur-mesure', img: '/img/menuiserie/acier.jpg', sub: '' },
 ]
 </script>
 

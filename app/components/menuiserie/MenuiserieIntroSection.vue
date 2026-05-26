@@ -1,15 +1,15 @@
 <script setup lang="ts">
 const items = [
-  { label: 'Porte d\'entrée', img: '/img/accueil/slider/porte.png' },
-  { label: 'Fenêtres', img: '/img/accueil/slider/fenetre.png' },
-  { label: 'Volets', img: '/img/accueil/slider/volet.png' },
-  { label: 'Baie coulissante', img: '/img/accueil/slider/baie-coulissante.png' },
-  { label: 'BSO', img: '/img/accueil/slider/bso.png' },
-  { label: 'Garde-corps', img: '/img/accueil/slider/garde-corps.png' },
-  { label: 'Vitrine', img: '/img/accueil/slider/vitrine.png' },
-  { label: 'Escaliers', img: '/img/accueil/slider/escaliers.png' },
-  { label: 'Stores', img: '/img/accueil/slider/stores.png' },
-  { label: 'Clôture', img: '/img/accueil/slider/cloture.png' },
+  { label: 'Porte d\'entrée', img: '/img/accueil/slider/porte.jpg' },
+  { label: 'Fenêtres', img: '/img/accueil/slider/fenetre.jpg' },
+  { label: 'Volets', img: '/img/accueil/slider/volet.jpg' },
+  { label: 'Baie coulissante', img: '/img/accueil/slider/baie-coulissante.jpg' },
+  { label: 'BSO', img: '/img/accueil/slider/bso.jpg' },
+  { label: 'Garde-corps', img: '/img/accueil/slider/garde-corps.jpg' },
+  { label: 'Vitrine', img: '/img/accueil/slider/vitrine.jpg' },
+  { label: 'Escaliers', img: '/img/accueil/slider/escaliers.jpg' },
+  { label: 'Stores', img: '/img/accueil/slider/stores.jpg' },
+  { label: 'Clôture', img: '/img/accueil/slider/cloture.jpg' },
 ]
 </script>
 

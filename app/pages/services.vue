@@ -31,7 +31,7 @@ const blocks = [
     title: 'La Plaquisterie',
     description:
       "La plaquisterie structure et valorise vos espaces intérieurs. Création de cloisons, faux plafonds, doublages ou aménagements sur mesure : chaque réalisation est pensée pour optimiser les volumes, améliorer l'isolation et offrir des finitions soignées. Un savoir-faire précis pour des intérieurs fonctionnels, esthétiques et durables.",
-    image: '/img/services/plaquisterie.png',
+    image: '/img/services/plaquisterie.jpg',
     variant: 'cream' as const,
     imagePosition: 'right' as const,
   },
