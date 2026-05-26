@@ -11,10 +11,6 @@ export default defineNuxtConfig({
     '@nuxt/icon',
   ],
 
-  image: {
-    provider: process.env.NETLIFY ? 'netlifyImageCdn' : 'ipx',
-  },
-
   runtimeConfig: {
     public: {
       web3formsAccessKey: process.env.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '',
