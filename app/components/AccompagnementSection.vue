@@ -7,21 +7,25 @@ const steps = [
     n: 1,
     title: 'Écoute & Analyse personnalisée',
     desc: 'Comprendre votre mode de vie, vos envies, votre budget.',
+    note: '',
   },
   {
     n: 2,
     title: 'Conception & Projection',
     desc: 'Vos idées deviennent un projet concret.',
+    note: '',
   },
   {
     n: 3,
     title: 'Coordination & Suivi des travaux',
     desc: 'Planification, suivi de chantier et contrôle qualité.',
+    note: '(réalisé par un architecte ou maître d\'œuvre partenaire)',
   },
   {
     n: 4,
     title: 'Livraison & Accompagnement final',
     desc: 'Accompagnement jusqu\'à la prise en main de votre nouvel espace.',
+    note: '',
   },
 ]
 </script>
@@ -55,6 +59,9 @@ const steps = [
           </h3>
           <p class="mt-3 max-w-sm text-lg leading-relaxed text-white/90 sm:text-xl">
             {{ step.desc }}
+          </p>
+          <p v-if="step.note" class="mt-2 max-w-sm text-sm leading-relaxed text-white/75 italic sm:text-base">
+            {{ step.note }}
           </p>
         </li>
       </ol>

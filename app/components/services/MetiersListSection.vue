@@ -1,9 +1,9 @@
 <script setup lang="ts">
 const metiers = [
-  { label: 'Peinture', icon: '/img/services/plaquisterie.svg' },
+  { label: 'Plaquisterie', icon: '/img/services/plaquisterie.svg' },
   { label: 'Isolation', icon: '/img/services/isolation.svg' },
   { label: 'Électricité', icon: '/img/services/electricite.svg' },
-  { label: 'Plaquisterie', icon: '/img/services/peinture.svg' },
+  { label: 'Plâtrerie & peinture', icon: '/img/services/peinture.svg' },
   { label: 'Sols', icon: '/img/services/sols.svg' },
 ]
 </script>

@@ -28,11 +28,10 @@
       </div>
 
       <div class="flex justify-center md:justify-end md:self-start">
-        <NuxtImg
-          src="/img/menuiserie/rge-qualibat.png"
+        <img
+          src="/img/menuiserie/rge-qualibat.svg"
           alt="RGE Qualibat — Votre label de fiabilité"
-          class="relative w-56 sm:w-96 md:-mt-48 lg:-mt-56 lg:w-[28rem]"
-          format="webp"
+          class="relative w-40 sm:w-64 md:-mt-32 lg:-mt-40 lg:w-80"
         />
       </div>
     </div>

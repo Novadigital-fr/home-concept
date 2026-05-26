@@ -152,6 +152,9 @@ const labelClasses = 'block text-base font-semibold text-white'
 
         <div class="mt-4">
           <label for="message" :class="labelClasses">Parlez-nous de votre projet</label>
+          <p class="mt-0.5 text-sm italic text-white/80">
+            (précisez les détails de votre projet&nbsp;: type de travaux, délai, …)
+          </p>
           <textarea
             id="message"
             v-model="form.message"

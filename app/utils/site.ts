@@ -1,14 +1,14 @@
 export const site = {
   name: 'Home Concept',
   tagline: 'Aix les Bains & alentours',
-  email: 'contact@homeconcept-renov.fr',
-  phone: '06 95 59 44 64',
-  phoneHref: 'tel:+33695594464',
+  email: 'contact@homeconcept-renovation.com',
+  phone: '06 76 72 79 35',
+  phoneHref: 'tel:+33676727935',
   address: {
-    street: '46 Chemin des Simons',
+    street: '168 avenue Saint Simond',
     city: '73100 AIX-LES-BAINS',
   },
-  metiers: 'Menuiserie • Plaquisterie & Isolation • Peinture • Sols • Électricité',
+  metiers: 'Menuiserie • Plaquisterie & Isolation • Plâtrerie & peinture • Sols • Électricité',
   social: {
     instagram: 'https://www.instagram.com/homeconcept73/',
     facebook: 'https://www.facebook.com/homeconcept73',

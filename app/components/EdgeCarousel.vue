@@ -118,6 +118,14 @@ onMounted(async () => {
 
     <button
       type="button"
+      aria-label="Précédent"
+      class="absolute top-1/2 left-4 z-10 hidden -translate-y-1/2 size-11 place-items-center rounded-full bg-white shadow-lg ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
+      @click="scrollByCard(-1)"
+    >
+      <Icon name="lucide:chevron-left" size="20" />
+    </button>
+    <button
+      type="button"
       aria-label="Suivant"
       class="absolute top-1/2 right-4 z-10 hidden -translate-y-1/2 size-11 place-items-center rounded-full bg-white shadow-lg ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
       @click="scrollByCard(1)"

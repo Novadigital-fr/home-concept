@@ -4,7 +4,7 @@
 <template>
   <section class="relative h-[28rem] overflow-hidden bg-ink text-white sm:h-[34rem] lg:h-[38rem]">
     <NuxtImg
-      src="/img/equipe/hero.png"
+      src="/img/equipe/hero.jpg"
       alt=""
       class="absolute inset-0 h-full w-full object-cover"
       loading="eager"

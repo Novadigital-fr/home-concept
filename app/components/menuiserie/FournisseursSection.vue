@@ -1,10 +1,19 @@
 <script setup lang="ts">
 const fournisseurs = [
   { name: 'K-LINE', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/k-line/logo.png' },
-  { name: 'Atlantem', img: '/img/menuiserie/fournisseurs/atlantem/produit.webp', logo: '/img/menuiserie/fournisseurs/atlantem/logo.webp' },
   { name: 'MéO', img: '/img/menuiserie/fournisseurs/meo/produit.png', logo: '/img/menuiserie/fournisseurs/meo/logo.png' },
   { name: 'FIMA', img: '/img/menuiserie/fournisseurs/fima/produit.jpg', logo: '/img/menuiserie/fournisseurs/fima/logo.png' },
   { name: 'France Fermetures', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/france-fermetures/logo.svg' },
+  { name: 'Profalux', img: '/img/menuiserie/fournisseurs/profalux/produit.jpg', logo: '/img/menuiserie/fournisseurs/profalux/logo.jpg' },
+  { name: 'Wibaie', img: '/img/menuiserie/fournisseurs/wibaie/produit.jpeg', logo: '/img/menuiserie/fournisseurs/wibaie/logo.jpg' },
+  { name: 'Stores Marquises', img: '/img/menuiserie/fournisseurs/stores-marquises/produit.jpg', logo: '/img/menuiserie/fournisseurs/stores-marquises/logo.webp' },
+  { name: 'Prefalu', img: '/img/menuiserie/fournisseurs/prefalu/produit.webp', logo: '/img/menuiserie/fournisseurs/prefalu/logo.webp' },
+  { name: 'Escao', img: '/img/menuiserie/fournisseurs/escao/produit.webp', logo: '/img/menuiserie/fournisseurs/escao/logo.jpeg' },
+  { name: 'Griesser', img: '/img/menuiserie/fournisseurs/griesser/produit.jpg', logo: '/img/menuiserie/fournisseurs/griesser/logo.png' },
+  { name: 'Righini', img: '/img/menuiserie/fournisseurs/righini/produit.jpg', logo: '/img/menuiserie/fournisseurs/righini/logo.png' },
+  { name: 'Rozière', img: '/img/menuiserie/fournisseurs/roziere/produit.jpg', logo: '/img/menuiserie/fournisseurs/roziere/logo.png' },
+  { name: 'Sogal', img: '/img/menuiserie/fournisseurs/sogal/produit.jpg', logo: '/img/menuiserie/fournisseurs/sogal/logo.jpg' },
+  { name: 'Atlantem', img: '/img/menuiserie/fournisseurs/atlantem/produit.webp', logo: '/img/menuiserie/fournisseurs/atlantem/logo.webp' },
 ]
 </script>
 

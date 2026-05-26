@@ -28,10 +28,10 @@ const blocks = [
     imagePosition: 'left' as const,
   },
   {
-    title: 'Le Placo',
+    title: 'La Plaquisterie',
     description:
       "La plaquisterie structure et valorise vos espaces intérieurs. Création de cloisons, faux plafonds, doublages ou aménagements sur mesure : chaque réalisation est pensée pour optimiser les volumes, améliorer l'isolation et offrir des finitions soignées. Un savoir-faire précis pour des intérieurs fonctionnels, esthétiques et durables.",
-    image: '/img/services/placo.jpg',
+    image: '/img/services/plaquisterie.png',
     variant: 'cream' as const,
     imagePosition: 'right' as const,
   },
@@ -44,7 +44,7 @@ const blocks = [
     imagePosition: 'left' as const,
   },
   {
-    title: 'La Peinture',
+    title: 'La Plâtrerie & peinture',
     description:
       "La peinture apporte la touche finale qui révèle tout le potentiel de vos espaces. Préparation des supports, choix des teintes et finitions soignées : chaque étape est réalisée avec exigence pour un rendu harmonieux et durable. Une intervention précise qui valorise votre intérieur et crée l'ambiance qui vous ressemble.",
     image: '/img/services/peinture.jpg',

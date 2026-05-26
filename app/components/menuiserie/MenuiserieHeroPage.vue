@@ -10,7 +10,7 @@
       loading="eager"
       format="webp"
     />
-    <div class="absolute inset-0 bg-gradient-to-r from-ink/40 via-ink/20 to-ink/50" />
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/55 via-ink/35 to-ink/65" />
 
     <div class="relative mx-auto flex h-full max-w-7xl items-center justify-center px-4 sm:px-6 lg:px-8">
       <div class="text-right">

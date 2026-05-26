@@ -1,9 +1,10 @@
 <script setup lang="ts">
 const materiaux = [
-  { label: 'Aluminium', desc: 'Modernité, finesse, grandes ouvertures', img: '/img/menuiserie/aluminium.webp' },
-  { label: 'Bois', desc: 'Chaleur, authenticité, sur-mesure', img: '/img/menuiserie/bois.jpg' },
-  { label: 'PVC', desc: 'Performance, entretien facile, abordable', img: '/img/menuiserie/pvc.jpg' },
-  { label: 'Mixte', desc: 'Le meilleur des deux mondes', img: 'https://picsum.photos/seed/mixte/700/900' },
+  { label: 'Aluminium', desc: 'Modernité, finesse, grandes ouvertures', img: '/img/menuiserie/aluminium.webp', sub: '' },
+  { label: 'Bois', desc: 'Chaleur, authenticité, noblesse', img: '/img/menuiserie/bois.jpg', sub: '' },
+  { label: 'PVC', desc: 'Performance, entretien facile, abordable', img: '/img/menuiserie/pvc.jpg', sub: '' },
+  { label: 'Hybride', desc: 'Le meilleur des deux mondes', img: '/img/menuiserie/hybride.jpg', sub: 'bois/aluminium ou aluminium/pvc' },
+  { label: 'Acier', desc: 'Robustesse, caractère, sur-mesure', img: '/img/menuiserie/acier.png', sub: '' },
 ]
 </script>
 
@@ -34,8 +35,9 @@ const materiaux = [
             />
             <div class="absolute inset-x-4 bottom-4">
               <div class="flex items-stretch">
-                <div class="flex items-center bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
+                <div class="flex flex-col items-start bg-white/75 px-5 py-3 shadow-lg backdrop-blur">
                   <p class="text-lg font-bold text-ink" style="font-family: var(--font-display);">{{ item.label }}</p>
+                  <p v-if="item.sub" class="mt-0.5 text-xs text-ink/75">{{ item.sub }}</p>
                 </div>
                 <button
                   type="button"
