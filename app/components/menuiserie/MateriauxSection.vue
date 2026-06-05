@@ -39,13 +39,6 @@ const materiaux = [
                   <p class="text-lg font-bold text-ink" style="font-family: var(--font-display);">{{ item.label }}</p>
                   <p v-if="item.sub" class="mt-0.5 text-xs text-ink/75">{{ item.sub }}</p>
                 </div>
-                <button
-                  type="button"
-                  class="grid w-11 shrink-0 place-items-center bg-ink text-white shadow-lg transition-colors hover:bg-black"
-                  :aria-label="`En savoir plus sur ${item.label}`"
-                >
-                  <Icon name="lucide:arrow-right" size="18" />
-                </button>
               </div>
               <p class="mt-3 text-base text-white drop-shadow-md sm:text-lg" style="font-family: var(--font-display);">{{ item.desc }}</p>
             </div>

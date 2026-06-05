@@ -3,6 +3,14 @@ import { navLinks, site } from '~/utils/site'
 
 const open = ref(false)
 const hideTop = ref(false)
+const headerEl = ref<HTMLElement | null>(null)
+
+// Expose la hauteur réelle (non repliée) du header dans --header-h
+// pour que le hero puisse faire 100vh - header.
+const setHeaderHeight = () => {
+  if (headerEl.value)
+    document.documentElement.style.setProperty('--header-h', `${headerEl.value.offsetHeight}px`)
+}
 let lastY = 0
 let downAccum = 0
 let upAccum = 0
@@ -47,47 +55,60 @@ const onScroll = () => {
 onMounted(() => {
   lastY = window.scrollY
   window.addEventListener('scroll', onScroll, { passive: true })
+  setHeaderHeight()
+  window.addEventListener('resize', setHeaderHeight, { passive: true })
 })
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
+  window.removeEventListener('resize', setHeaderHeight)
 })
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-neutral-100">
+  <header ref="headerEl" class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-100">
     <!-- Row 1 : identité + contacts -->
     <div
       :class="[
-        'grid grid-cols-1 border-neutral-100 transition-[grid-template-rows,opacity] duration-300 ease-out',
-        hideTop ? 'grid-rows-[0fr] opacity-0' : 'grid-rows-[1fr] border-b opacity-100',
+        'grid grid-cols-1 grid-rows-[1fr] border-b border-neutral-100 opacity-100 transition-[grid-template-rows,opacity] duration-300 ease-out',
+        hideTop ? 'lg:grid-rows-[0fr] lg:border-b-0 lg:opacity-0' : '',
       ]"
     >
       <div class="overflow-hidden">
-        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+        <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-2 sm:px-6 lg:px-8">
         <NuxtLink to="/" class="flex items-center gap-3">
-          <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-12 w-auto" format="webp" />
+          <NuxtImg src="/img/logo.png" alt="Home Concept" class="h-10 w-auto" format="webp" />
           <span class="flex flex-col leading-tight">
             <span class="text-sm font-bold text-ink">{{ site.name }}</span>
             <span class="text-xs text-neutral-500">{{ site.tagline }}</span>
           </span>
         </NuxtLink>
 
-        <div class="hidden items-center gap-5 text-xs text-neutral-700 sm:flex">
-          <a :href="`mailto:${site.email}`" class="flex items-center gap-1.5 hover:text-brand">
-            <Icon name="lucide:mail" size="14" />
-            {{ site.email }}
-          </a>
-          <a :href="site.phoneHref" class="flex items-center gap-1.5 hover:text-brand">
-            <Icon name="lucide:phone" size="14" />
-            {{ site.phone }}
-          </a>
+        <div class="flex items-center gap-5">
+          <div class="hidden items-center gap-5 text-xs text-neutral-700 sm:flex">
+            <a :href="`mailto:${site.email}`" class="flex items-center gap-1.5 hover:text-brand">
+              <Icon name="lucide:mail" size="14" />
+              {{ site.email }}
+            </a>
+            <a :href="site.phoneHref" class="flex items-center gap-1.5 hover:text-brand">
+              <Icon name="lucide:phone" size="14" />
+              {{ site.phone }}
+            </a>
+          </div>
+          <button
+            type="button"
+            class="lg:hidden"
+            aria-label="Ouvrir le menu"
+            @click="open = !open"
+          >
+            <Icon :name="open ? 'lucide:x' : 'lucide:menu'" size="24" />
+          </button>
         </div>
         </div>
       </div>
     </div>
 
-    <!-- Row 2 : nav + CTA -->
-    <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <!-- Row 2 : nav + CTA (desktop only) -->
+    <div class="mx-auto hidden h-12 max-w-7xl items-center justify-between px-4 sm:px-6 lg:flex lg:px-8">
       <nav class="hidden items-center gap-7 text-sm font-medium text-ink lg:flex lg:text-base">
         <NuxtLink
           v-for="link in navLinks"

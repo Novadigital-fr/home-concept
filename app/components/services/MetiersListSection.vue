@@ -16,42 +16,19 @@ const metiers = [
         de vos projets de rénovation et d'aménagement.
       </h2>
 
-      <div class="relative mt-12">
-        <button
-          type="button"
-          aria-label="Précédent"
-          class="absolute top-1/2 -left-2 z-10 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
-        >
-          <Icon name="lucide:chevron-left" size="18" />
-        </button>
-        <button
-          type="button"
-          aria-label="Suivant"
-          class="absolute top-1/2 -right-2 z-10 hidden size-10 -translate-y-1/2 place-items-center rounded-full bg-white shadow-md ring-1 ring-neutral-200 hover:bg-neutral-50 sm:grid"
-        >
-          <Icon name="lucide:chevron-right" size="18" />
-        </button>
-
+      <div class="mt-12">
         <ul class="flex flex-wrap items-end justify-center gap-10 sm:gap-14 lg:gap-20">
           <li
-            v-for="(m, i) in metiers"
+            v-for="m in metiers"
             :key="m.label"
             class="flex flex-col items-center gap-4 text-center"
           >
             <img
               :src="m.icon"
               :alt="m.label"
-              :class="[
-                'w-auto object-contain',
-                i === 2 ? 'h-40' : i === 1 || i === 3 ? 'h-24' : 'h-16',
-              ]"
+              class="h-24 w-auto object-contain"
             />
-            <p
-              :class="[
-                'transition-all',
-                i === 2 ? 'text-lg font-bold text-ink' : 'text-base font-medium text-neutral-700',
-              ]"
-            >
+            <p class="text-base font-medium text-neutral-700">
               {{ m.label }}
             </p>
           </li>

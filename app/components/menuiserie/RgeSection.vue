@@ -12,17 +12,17 @@
         <div class="mt-6 max-w-2xl space-y-4 text-lg sm:text-xl leading-relaxed text-white/95">
           <p>
             <strong class="font-bold">RGE</strong>, ou Reconnu Garant de l'Environnement,
-            signifie que nous répondons à des critères stricts en matière de qualité et
-            de performance énergétique.
+            signifie que nous répondons à des <strong class="font-bold">critères stricts</strong> en matière de <strong class="font-bold">qualité</strong> et
+            de <strong class="font-bold">performance énergétique</strong>.
           </p>
           <p>
-            Cette certification vous garantit des travaux réalisés dans les règles de
-            l'art, avec des solutions adaptées pour améliorer l'isolation de votre habitat.
+            Cette certification vous <strong class="font-bold">garantit</strong> des travaux réalisés dans les <strong class="font-bold">règles de
+            l'art</strong>, avec des solutions adaptées pour <strong class="font-bold">améliorer</strong> <strong class="font-bold">l'isolation</strong> de votre habitat.
           </p>
           <p>
-            Faire appel à nous vous permettrait également de bénéficier de certaines aides
-            financières de l'État pour vos travaux de rénovation énergétique, tout en
-            ayant l'assurance d'un accompagnement fiable et reconnu.
+            Faire appel à nous vous permettrait également de <strong class="font-bold">bénéficier</strong> de certaines <strong class="font-bold">aides
+            financières de l'État</strong> pour vos travaux de rénovation énergétique, tout en
+            ayant l'assurance d'un <strong class="font-bold">accompagnement fiable</strong> et <strong class="font-bold">reconnu</strong>.
           </p>
         </div>
       </div>

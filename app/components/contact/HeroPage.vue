@@ -3,13 +3,14 @@
 
 <template>
   <section class="relative h-[28rem] overflow-hidden bg-ink text-white sm:h-[34rem] lg:h-[38rem]">
-    <NuxtImg
-      src="/img/contact/hero.jpg"
+    <img
+      src="/img/contact/hero.webp"
       alt=""
       class="absolute inset-0 h-full w-full object-cover"
       loading="eager"
-      format="webp"
-    />
+      fetchpriority="high"
+      decoding="async"
+    >
     <div class="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8">
       <h1 class="text-4xl leading-[0.95] font-extrabold tracking-tight sm:text-7xl lg:text-8xl">
         VOTRE<br>PROJET

@@ -18,21 +18,21 @@ withDefaults(defineProps<{ variant?: Variant }>(), { variant: 'cream' })
         </p>
         <div class="mt-8 max-w-xl space-y-5 text-lg sm:text-xl leading-relaxed text-white/90">
           <p>
-            Spécialistes de la menuiserie sur mesure, nous accompagnons nos clients
-            à chaque étape de leur projet, de la conception à la pose finale. Nous
-            réalisons et installons des portes, fenêtres et aménagements alliant
-            esthétisme, performance thermique et durabilité, afin d'améliorer le
-            confort et de valoriser chaque habitat.
+            Spécialistes de la menuiserie <strong class="font-semibold text-white">sur mesure</strong>, nous accompagnons nos clients
+            à <strong class="font-semibold text-white">chaque étape</strong> de leur projet, de la conception à la pose finale. Nous
+            <strong class="font-semibold text-white">réalisons</strong> et <strong class="font-semibold text-white">installons</strong> des portes, fenêtres et aménagements alliant
+            <strong class="font-semibold text-white">esthétisme</strong>, performance <strong class="font-semibold text-white">thermique</strong> et <strong class="font-semibold text-white">durabilité</strong>, afin d'améliorer le
+            <strong class="font-semibold text-white">confort</strong> et de <strong class="font-semibold text-white">valoriser</strong> chaque habitat.
           </p>
           <p>
             Basés à Aix-les-Bains, nous intervenons également à Chambéry, Annecy et
             dans les communes environnantes, ce qui nous permet d'assurer un
-            accompagnement de proximité et une grande réactivité sur chaque chantier.
+            <strong class="font-semibold text-white">accompagnement de proximité</strong> et une <strong class="font-semibold text-white">grande réactivité</strong> sur chaque chantier.
           </p>
           <p>
-            Soucieux de proposer des prestations haut de gamme, nous travaillons aux
-            côtés de fournisseurs français reconnus et d'artisans qualifiés,
-            sélectionnés avec exigence pour la qualité de leurs matériaux et le soin
+            Soucieux de proposer des prestations <strong class="font-semibold text-white">haut de gamme</strong>, nous travaillons aux
+            côtés de <strong class="font-semibold text-white">fournisseurs français reconnus</strong> et d'<strong class="font-semibold text-white">artisans qualifiés</strong>,
+            sélectionnés avec <strong class="font-semibold text-white">exigence</strong> pour la <strong class="font-semibold text-white">qualité</strong> de leurs matériaux et le <strong class="font-semibold text-white">soin</strong>
             apporté aux finitions.
           </p>
         </div>

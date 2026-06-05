@@ -36,7 +36,7 @@ const blocks = [
     imagePosition: 'right' as const,
   },
   {
-    title: 'Les sols',
+    title: 'Les Sols',
     description:
       "Le revêtement de sol vient sublimer vos espaces tout en répondant à vos contraintes du quotidien. Parquet, carrelage, vinyle ou sols techniques : chaque matériau est sélectionné avec soin et posé avec précision pour garantir esthétisme, durabilité et confort. Une finition essentielle pour donner du caractère et de la cohérence à votre intérieur.",
     image: '/img/services/sols.jpg',
@@ -44,7 +44,7 @@ const blocks = [
     imagePosition: 'left' as const,
   },
   {
-    title: 'La Plâtrerie & peinture',
+    title: 'La Plâtrerie & Peinture',
     description:
       "La peinture apporte la touche finale qui révèle tout le potentiel de vos espaces. Préparation des supports, choix des teintes et finitions soignées : chaque étape est réalisée avec exigence pour un rendu harmonieux et durable. Une intervention précise qui valorise votre intérieur et crée l'ambiance qui vous ressemble.",
     image: '/img/services/peinture.jpg',
