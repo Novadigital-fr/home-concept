@@ -37,7 +37,8 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.cluster121.hosting.ovh.net
-          protocol: ftps
+          # OVH mutualisé n'accepte pas le FTPS explicite sur ce cluster -> FTP simple.
+          protocol: ftp
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           # Contenu généré (ne pas oublier le slash final).
