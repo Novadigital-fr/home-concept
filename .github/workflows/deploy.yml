@@ -1,0 +1,46 @@
+name: Déploiement OVH
+
+# Déclenché à chaque push sur main, ou manuellement depuis l'onglet Actions.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Évite deux déploiements simultanés : un nouveau push annule le précédent en cours.
+concurrency:
+  group: deploy-ovh
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupération du code
+        uses: actions/checkout@v4
+
+      - name: Installation de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installation des dépendances
+        run: npm ci
+
+      - name: Génération du site statique
+        run: npm run generate
+        env:
+          # Clé du formulaire de contact (Web3Forms), injectée au build.
+          NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY: ${{ secrets.NUXT_PUBLIC_WEB3FORMS_ACCESS_KEY }}
+
+      - name: Envoi par FTP vers OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.cluster121.hosting.ovh.net
+          protocol: ftps
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # Contenu généré (ne pas oublier le slash final).
+          local-dir: ./.output/public/
+          # Racine web OVH mutualisé. À adapter si ton site est servi ailleurs.
+          server-dir: ./www/

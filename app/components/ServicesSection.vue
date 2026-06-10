@@ -33,7 +33,7 @@ const services = [
                 <span class="text-sm font-bold text-ink" style="font-family: var(--font-display);">{{ item.label }}</span>
               </div>
               <NuxtLink
-                :to="`/services/${item.label.toLowerCase()}`"
+                to="/services"
                 class="grid w-11 shrink-0 place-items-center bg-ink text-white shadow-lg transition-colors hover:bg-black"
                 :aria-label="`En savoir plus sur ${item.label}`"
               >
