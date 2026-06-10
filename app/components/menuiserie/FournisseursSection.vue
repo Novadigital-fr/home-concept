@@ -45,12 +45,15 @@ const fournisseurs = [
             />
             <div class="absolute inset-0 bg-white/55" />
             <div class="absolute inset-x-0 bottom-0 flex justify-center p-6">
-              <NuxtImg
+              <!-- Logos servis tels quels (pas via ipx) : préserve les SVG
+                   et leurs styles CSS, qui ne se rastérisent pas correctement. -->
+              <img
                 :src="item.logo"
                 :alt="item.name"
                 class="max-h-20 w-auto max-w-[70%] object-contain"
-                format="webp"
-              />
+                loading="lazy"
+                decoding="async"
+              >
             </div>
           </template>
         </EdgeCarousel>
