@@ -11,6 +11,8 @@
       fetchpriority="high"
       decoding="async"
     >
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/60 via-ink/40 to-ink/60" />
+
     <div class="relative mx-auto flex h-full max-w-7xl flex-col items-center justify-center px-4 text-center sm:px-6 lg:px-8">
       <h1 class="text-4xl leading-[0.95] font-extrabold tracking-tight sm:text-7xl lg:text-8xl">
         VOTRE<br>PROJET

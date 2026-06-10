@@ -3,7 +3,7 @@ const fournisseurs = [
   { name: 'K-LINE', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/k-line/logo.png' },
   { name: 'MéO', img: '/img/menuiserie/fournisseurs/meo/produit.jpg', logo: '/img/menuiserie/fournisseurs/meo/logo.png' },
   { name: 'FIMA', img: '/img/menuiserie/fournisseurs/fima/produit.jpg', logo: '/img/menuiserie/fournisseurs/fima/logo.png' },
-  { name: 'France Fermetures', img: '/img/menuiserie/fournisseurs/k-line/produit.webp', logo: '/img/menuiserie/fournisseurs/france-fermetures/logo.svg' },
+  { name: 'France Fermetures', img: '/img/menuiserie/fournisseurs/france-fermetures/VR_SOLAIRE.jpeg', logo: '/img/menuiserie/fournisseurs/france-fermetures/logo.svg' },
   { name: 'Profalux', img: '/img/menuiserie/fournisseurs/profalux/produit.jpg', logo: '/img/menuiserie/fournisseurs/profalux/logo.jpg' },
   { name: 'Wibaie', img: '/img/menuiserie/fournisseurs/wibaie/produit.jpeg', logo: '/img/menuiserie/fournisseurs/wibaie/logo.jpg' },
   { name: 'Stores Marquises', img: '/img/menuiserie/fournisseurs/stores-marquises/produit.jpg', logo: '/img/menuiserie/fournisseurs/stores-marquises/logo.webp' },

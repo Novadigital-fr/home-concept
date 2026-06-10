@@ -9,7 +9,7 @@ const items = [
   { label: 'Vitrine', img: '/img/accueil/slider/vitrine.jpg' },
   { label: 'Escaliers', img: '/img/accueil/slider/escaliers.jpg' },
   { label: 'Stores', img: '/img/accueil/slider/stores.jpg' },
-  { label: 'Clôture', img: '/img/accueil/slider/cloture.jpg' },
+  { label: 'Portail / Clôture', img: '/img/accueil/slider/cloture.jpg' },
 ]
 </script>
 
