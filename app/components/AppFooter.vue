@@ -3,19 +3,53 @@ import { site, navLinks } from '~/utils/site'
 
 const year = new Date().getFullYear()
 
+const config = useRuntimeConfig()
+
 const form = reactive({
   name: '',
   email: '',
   message: '',
+  botcheck: '',
 })
 const sent = ref(false)
-const submit = () => {
-  // TODO: brancher sur l'API/serveur d'envoi
-  sent.value = true
-  setTimeout(() => { sent.value = false }, 4000)
-  form.name = ''
-  form.email = ''
-  form.message = ''
+const sending = ref(false)
+const errorMsg = ref('')
+
+const submit = async () => {
+  if (sending.value) return
+  errorMsg.value = ''
+  sending.value = true
+
+  try {
+    const res = await $fetch<{ success: boolean, message?: string }>('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: {
+        access_key: config.public.web3formsAccessKey,
+        subject: `Demande de devis (footer) — ${form.name}`.trim(),
+        from_name: form.name || 'Site Home Concept',
+        replyto: form.email,
+        nom: form.name,
+        email: form.email,
+        message: form.message,
+        botcheck: form.botcheck,
+      },
+    })
+
+    if (!res.success) {
+      errorMsg.value = res.message || "L'envoi a échoué. Merci de réessayer."
+      return
+    }
+
+    sent.value = true
+    setTimeout(() => { sent.value = false }, 4000)
+    Object.assign(form, { name: '', email: '', message: '', botcheck: '' })
+  }
+  catch {
+    errorMsg.value = "L'envoi a échoué. Vérifiez votre connexion puis réessayez."
+  }
+  finally {
+    sending.value = false
+  }
 }
 </script>
 
@@ -70,12 +104,16 @@ const submit = () => {
             placeholder="Votre demande"
             class="w-full rounded-md border border-neutral-700 bg-ink-soft px-4 py-2.5 text-sm text-white placeholder:text-neutral-500 focus:border-brand focus:outline-none"
           />
+          <!-- Honeypot anti-spam (caché) -->
+          <input v-model="form.botcheck" type="text" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
           <button
             type="submit"
-            class="w-full rounded-md bg-white px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-neutral-100"
+            :disabled="sending"
+            class="w-full rounded-md bg-white px-5 py-3 text-sm font-semibold text-ink transition-colors hover:bg-neutral-100 disabled:opacity-60"
           >
-            {{ sent ? 'Message envoyé ✓' : 'Envoyer' }}
+            {{ sent ? 'Message envoyé ✓' : sending ? 'Envoi…' : 'Envoyer' }}
           </button>
+          <p v-if="errorMsg" class="text-sm text-red-300">{{ errorMsg }}</p>
         </form>
       </div>
 
