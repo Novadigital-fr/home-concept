@@ -19,6 +19,13 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  // <behold-widget> est un web component (flux Instagram Behold), pas un composant Vue.
+  vue: {
+    compilerOptions: {
+      isCustomElement: tag => tag === 'behold-widget',
+    },
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },

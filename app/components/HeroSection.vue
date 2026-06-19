@@ -19,11 +19,11 @@ import { site } from '~/utils/site'
 
     <div class="relative mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-2 lg:px-8">
       <!-- Logo Home Concept -->
-      <div class="hidden items-center justify-center md:flex md:justify-start">
+      <div class="flex items-center justify-start">
         <NuxtImg
           src="/img/logo.png"
           alt="Home Concept"
-          class="w-40 sm:w-72 lg:w-96"
+          class="w-28 md:w-72 lg:w-96"
           format="webp"
         />
       </div>
