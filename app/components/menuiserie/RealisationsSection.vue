@@ -1,17 +1,18 @@
 <script setup lang="ts">
+// alt : décrit la réalisation (accessibilité + référencement Google Images).
 const photos = [
-  '/img/menuiserie/realisations/1.jpg',
-  '/img/menuiserie/realisations/3.jpg',
-  '/img/menuiserie/realisations/6.jpg',
-  '/img/menuiserie/realisations/8.jpg',
-  '/img/menuiserie/realisations/9.jpg',
-  '/img/menuiserie/realisations/12.jpg',
-  '/img/menuiserie/realisations/16.jpg',
-  '/img/menuiserie/realisations/17.jpg',
-  '/img/menuiserie/realisations/18.jpg',
-  '/img/menuiserie/realisations/19.jpg',
-  '/img/menuiserie/realisations/20.jpg',
-  '/img/menuiserie/realisations/21.jpg',
+  { src: '/img/menuiserie/realisations/1.jpg', alt: 'Fenêtre de pignon sous charpente en bois apparente' },
+  { src: '/img/menuiserie/realisations/3.jpg', alt: 'Grande fenêtre fixe à cadre noir dans un séjour' },
+  { src: '/img/menuiserie/realisations/6.jpg', alt: 'Fenêtre de toit avec store dans des combles aménagés' },
+  { src: '/img/menuiserie/realisations/8.jpg', alt: 'Porte-fenêtre cintrée bleue sur mesure pour une façade de boutique' },
+  { src: '/img/menuiserie/realisations/9.jpg', alt: 'Portes intérieures finition bois dans un couloir' },
+  { src: '/img/menuiserie/realisations/12.jpg', alt: 'Fenêtre coulissante noire donnant sur le jardin' },
+  { src: '/img/menuiserie/realisations/16.jpg', alt: 'Porte d\'entrée vert de gris avec heurtoir' },
+  { src: '/img/menuiserie/realisations/17.jpg', alt: 'Grandes fenêtres à petits bois ouvrant sur le jardin' },
+  { src: '/img/menuiserie/realisations/18.jpg', alt: 'Fenêtre de toit avec volet roulant intégré' },
+  { src: '/img/menuiserie/realisations/19.jpg', alt: 'Poignée K-Line sur une fenêtre blanche' },
+  { src: '/img/menuiserie/realisations/20.jpg', alt: 'Pose d\'une fenêtre de toit en rénovation de combles' },
+  { src: '/img/menuiserie/realisations/21.jpg', alt: 'Baies vitrées coulissantes noires sous charpente bois' },
 ]
 </script>
 
@@ -34,8 +35,9 @@ const photos = [
           class="aspect-square overflow-hidden"
         >
           <NuxtImg
-            :src="photo"
-            alt=""
+            :src="photo.src"
+            :alt="photo.alt"
+            loading="lazy"
             class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
             format="webp"
           />

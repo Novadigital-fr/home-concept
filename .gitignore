@@ -22,3 +22,6 @@ logs
 .env
 .env.*
 !.env.example
+
+# Documents de travail internes (audit SEO, etc.) : ne jamais commiter, le dépôt est public
+docs/

@@ -1,13 +1,8 @@
 <script setup lang="ts">
-useHead({
-  title: 'La menuiserie — Home Concept',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Spécialiste de la menuiserie sur mesure — portes, fenêtres, volets, baies vitrées, à Aix-les-Bains, Chambéry, Annecy. Certifié RGE.',
-    },
-  ],
+usePageSeo({
+  title: 'Menuiserie sur mesure à Aix-les-Bains — Home Concept',
+  description:
+    'Spécialiste de la menuiserie sur mesure — portes, fenêtres, volets, baies vitrées, à Aix-les-Bains, Chambéry, Annecy. Certifié RGE.',
 })
 </script>
 

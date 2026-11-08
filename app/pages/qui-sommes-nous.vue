@@ -1,13 +1,8 @@
 <script setup lang="ts">
-useHead({
-  title: 'Qui sommes-nous ? — Home Concept',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Découvrez l\'équipe Home Concept : des artisans qualifiés et polyvalents au service de vos projets de rénovation à Aix-les-Bains et alentours.',
-    },
-  ],
+usePageSeo({
+  title: 'Qui sommes-nous ? Artisans à Aix-les-Bains — Home Concept',
+  description:
+    'Découvrez l\'équipe Home Concept : des artisans qualifiés et polyvalents au service de vos projets de rénovation à Aix-les-Bains et alentours.',
 })
 </script>
 

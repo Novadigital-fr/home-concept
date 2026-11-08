@@ -18,12 +18,15 @@
         <p class="font-display text-center text-3xl font-bold tracking-wide text-white/95 sm:text-4xl lg:text-5xl">
           notre cœur de métier
         </p>
-        <h1 class="font-display mt-1 text-4xl leading-none font-bold tracking-tight sm:text-7xl lg:text-9xl">
-          LA MENUISERIE
+        <!-- H1 = « La menuiserie intérieure & extérieure » (2 lignes stylées séparément) -->
+        <h1>
+          <span class="font-display mt-1 block text-4xl leading-none font-bold tracking-tight sm:text-7xl lg:text-9xl">
+            LA MENUISERIE
+          </span>
+          <span class="mt-3 block text-xl font-normal tracking-wider text-white/95 italic sm:text-2xl lg:text-3xl" style="font-family: var(--font-display);">
+            INTÉRIEURE &amp; EXTÉRIEURE
+          </span>
         </h1>
-        <p class="mt-3 text-xl tracking-wider text-white/95 italic sm:text-2xl lg:text-3xl" style="font-family: var(--font-display);">
-          INTÉRIEURE &amp; EXTÉRIEURE
-        </p>
       </div>
     </div>
   </section>

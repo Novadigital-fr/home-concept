@@ -1,13 +1,8 @@
 <script setup lang="ts">
-useHead({
-  title: 'Home Concept — Expert en menuiserie & rénovation intérieure',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Home Concept, spécialiste de la menuiserie sur mesure et de la rénovation intérieure à Aix-les-Bains, Chambéry, Annecy et alentours.',
-    },
-  ],
+usePageSeo({
+  title: 'Home Concept — Menuiserie & rénovation intérieure à Aix-les-Bains',
+  description:
+    'Home Concept, spécialiste de la menuiserie sur mesure et de la rénovation intérieure à Aix-les-Bains, Chambéry, Annecy et alentours.',
 })
 
 const root = ref<HTMLElement | null>(null)

@@ -1,13 +1,8 @@
 <script setup lang="ts">
-useHead({
-  title: 'Nos métiers complémentaires — Home Concept',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Électricité, isolation, plaquisterie, sols, peinture — Home Concept assure un accompagnement global de vos projets de rénovation et d\'aménagement.',
-    },
-  ],
+usePageSeo({
+  title: 'Rénovation intérieure à Aix-les-Bains : nos métiers — Home Concept',
+  description:
+    'Électricité, isolation, plaquisterie, sols, peinture — Home Concept assure un accompagnement global de vos projets de rénovation et d\'aménagement.',
 })
 
 const blocks = [
